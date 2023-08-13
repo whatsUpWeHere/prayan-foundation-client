@@ -132,7 +132,7 @@ const Navbar = () => {
                             <div
                                 className={`z-50 ${
                                     toggleDropdown ? "visible" : "hidden"
-                                } my-4  list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600
+                                } my-4  list-none  divide-y divide-gray-100 rounded-lg shadow bg-gray-700 dark:divide-gray-600
                         absolute top-[3.5rem] right-[.25rem] w-[50%] flex flex-col text-2xl items-start justify-center p-4 `}
                                 id="user-dropdown"
                             >
