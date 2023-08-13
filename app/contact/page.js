@@ -5,7 +5,7 @@ import SectionWrapper from "@/hoc/SectionWrapper";
 const contact = () => {
     return (
         <div>
-            contact
+            
             <ContactForm />
         </div>
     );
