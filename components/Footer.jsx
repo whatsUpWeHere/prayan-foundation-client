@@ -43,7 +43,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="py-8 lg:py-16 lg:pe-16 ">
-                        <div className="text-teal-600 dark:text-teal-300 flex justify-start items-center ml-11 ">
+                        <div className="text-teal-300  justify-start items-center ml-11 ">
                             <Image
                                 src={logo}
                                 alt="logo"

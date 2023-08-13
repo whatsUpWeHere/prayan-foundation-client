@@ -64,7 +64,7 @@ const Navbar = () => {
                                                 href={item.path}
                                                 onClick={() => {
                                                     setActive(item.name);
-                                                    console.log(active)
+                                                    console.log(active);
                                                 }}
                                             >
                                                 {item.name}
@@ -148,54 +148,20 @@ const Navbar = () => {
                                     className="py-2"
                                     aria-labelledby="user-menu-button"
                                 >
-                                    <li>
-                                        <a
-                                            href="#"
-                                            className="block px-4 py-2  text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                                        >
-                                            Home
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            className="block px-4 py-2  text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                                        >
-                                            About
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            className="block px-4 py-2  text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                                        >
-                                            Our Units
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            className="block px-4 py-2  text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                                        >
-                                            Events
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            className="block px-4 py-2  text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                                        >
-                                            Blog
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            className="block px-4 py-2  text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                                        >
-                                            Contact
-                                        </a>
-                                    </li>
+                                     {nav_data.map((item, index) => {
+                                        return (
+                                            <li key={index}>
+                                                <Link
+                                                    href={item.path}
+                                                    className={`block px-4 py-2 ${active == item.name ? "text-white border-2 border-teal-600" :"text-gray-700"}  hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white`}
+                                                    onClick={()=>{setActive(item.name)}}
+                                                >
+                                                    {item.name}
+                                                </Link>
+                                            </li>
+                                        );
+                                    })}
+                                    
                                 </ul>
                             </div>
                         </div>
