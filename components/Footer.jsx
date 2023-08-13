@@ -5,7 +5,7 @@ import { logo } from "@/assets";
 
 const Footer = () => {
     return (
-        <footer className="dark:bg-[#20212B]">
+        <footer className="bg-[#20212B] text-white">
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
                 <div className="lg:grid lg:grid-cols-2">
                     <div className="border-b border-gray-100 py-8 dark:border-gray-800 lg:order-last lg:border-b-0 lg:border-s lg:py-16 lg:ps-16">
