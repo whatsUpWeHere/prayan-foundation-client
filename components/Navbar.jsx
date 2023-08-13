@@ -97,7 +97,7 @@ const Navbar = () => {
                             <button
                                 data-collapse-toggle="mobile-menu-2"
                                 type="button"
-                                className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                                className="inline-flex items-center p-2 ml-1 text-sm text-gray-200 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                                 aria-controls="mobile-menu-2"
                                 aria-expanded="false"
                                 onClick={() => {
@@ -137,10 +137,10 @@ const Navbar = () => {
                                 id="user-dropdown"
                             >
                                 <div className="px-4 py-3">
-                                    <span className="block  text-gray-900 dark:text-white font-semibold">
+                                    <span className="block  text-white font-semibold">
                                         Prayan NGO
                                     </span>
-                                    <span className="block   text-gray-500 truncate dark:text-gray-400">
+                                    <span className="block   text-gray-200 truncate ">
                                         Our Tagline
                                     </span>
                                 </div>
@@ -153,7 +153,7 @@ const Navbar = () => {
                                             <li key={index}>
                                                 <Link
                                                     href={item.path}
-                                                    className={`block px-4 py-2 ${active == item.name ? "text-white border-2 border-teal-600" :"text-gray-700"}  hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white`}
+                                                    className={`block px-4 py-2 ${active == item.name ? "text-white border-2 border-teal-600" :"text-gray-200"}  hover:bg-gray-100 dark:hover:bg-gray-600 text-gray-200 dark:hover:text-white`}
                                                     onClick={()=>{setActive(item.name)}}
                                                 >
                                                     {item.name}
