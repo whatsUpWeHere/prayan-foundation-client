@@ -97,7 +97,7 @@ const Navbar = () => {
                             <button
                                 data-collapse-toggle="mobile-menu-2"
                                 type="button"
-                                className="inline-flex items-center p-2 ml-1 text-sm text-gray-200 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                                className="inline-flex items-center p-2 ml-1 text-sm text-gray-200 rounded-lg md:hidden  focus:outline-none focus:ring-2 hover:bg-gray-700 focus:ring-gray-600"
                                 aria-controls="mobile-menu-2"
                                 aria-expanded="false"
                                 onClick={() => {
@@ -149,11 +149,12 @@ const Navbar = () => {
                                     aria-labelledby="user-menu-button"
                                 >
                                      {nav_data.map((item, index) => {
-                                        return (
+                                        return (    
                                             <li key={index}>
                                                 <Link
                                                     href={item.path}
-                                                    className={`block px-4 py-2 ${active == item.name ? "text-white border-2 border-teal-600" :"text-gray-200"}  hover:bg-gray-100 dark:hover:bg-gray-600 text-gray-200 dark:hover:text-white`}
+                                                    className={`block px-4 py-2 ${active == item.name ? "text-white border-2 border-teal-600" :"text-gray-200"}  
+                                                    focus: focus:bg-teal-600  hover:bg-teal-500 text-gray-200 dark:hover:text-white`}
                                                     onClick={()=>{setActive(item.name)}}
                                                 >
                                                     {item.name}

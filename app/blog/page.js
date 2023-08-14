@@ -1,7 +1,9 @@
 import React from "react";
+import Blog from "@/components/Blog"
+import SectionWrapper from "@/hoc/SectionWrapper";
 
 const blog = () => {
-  return <div>blog</div>;
+  return <Blog />;
 };
 
-export default blog;
+export default SectionWrapper(blog);

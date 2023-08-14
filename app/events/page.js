@@ -1,7 +1,14 @@
 import React from "react";
+import Event from "@/components/Event";
+import SectionWrapper from "@/hoc/SectionWrapper";
 
 const events = () => {
-  return <div>events</div>;
+
+  return (
+    <div>
+      <Event />
+    </div>
+  );
 };
 
-export default events;
+export default SectionWrapper(events);
