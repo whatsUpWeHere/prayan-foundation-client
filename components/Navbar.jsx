@@ -5,10 +5,24 @@ import { logo } from "@/assets";
 import Link from "next/link";
 import { nav_data } from "@/constants";
 
+import { UserButton } from "@clerk/nextjs";
+import { useUser } from "@clerk/nextjs";
+import { useAuth } from "@clerk/nextjs";
+
 const Navbar = () => {
     const [active, setActive] = useState("");
     const [scrolling, setScrolling] = useState(false);
     const [toggleDropdown, setToggleDropdown] = useState(false);
+
+    const { isLoaded, isSignedIn, user } = useUser();
+    const { userId, sessionId, getToken } = useAuth();
+
+    // console.log("isloaded: ", isLoaded);
+    // console.log("isSignedIn: ", isSignedIn);
+    // console.log("sessionId: ", sessionId);
+    // console.log("userId: ", userId);
+    // console.log("getToken: ", getToken);
+    // console.log("user: ", user);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -35,6 +49,8 @@ const Navbar = () => {
             className={`sticky-nav  text-white sticky top-0 transition-bg duration-300 z-10 h-30 items-center `}
             style={{ backgroundColor }}
         >
+            <UserButton />
+
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between">
                     <div className="md:flex md:items-center md:gap-12">
@@ -148,21 +164,26 @@ const Navbar = () => {
                                     className="py-2"
                                     aria-labelledby="user-menu-button"
                                 >
-                                     {nav_data.map((item, index) => {
-                                        return (    
+                                    {nav_data.map((item, index) => {
+                                        return (
                                             <li key={index}>
                                                 <Link
                                                     href={item.path}
-                                                    className={`block px-4 py-2 ${active == item.name ? "text-white border-2 border-teal-600" :"text-gray-200"}  
+                                                    className={`block px-4 py-2 ${
+                                                        active == item.name
+                                                            ? "text-white border-2 border-teal-600"
+                                                            : "text-gray-200"
+                                                    }  
                                                     focus: focus:bg-teal-600  hover:bg-teal-500 text-gray-200 dark:hover:text-white`}
-                                                    onClick={()=>{setActive(item.name)}}
+                                                    onClick={() => {
+                                                        setActive(item.name);
+                                                    }}
                                                 >
                                                     {item.name}
                                                 </Link>
                                             </li>
                                         );
                                     })}
-                                    
                                 </ul>
                             </div>
                         </div>

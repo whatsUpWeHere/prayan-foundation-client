@@ -1,4 +1,5 @@
-import { blog_1 } from '@/assets';
+import { blog_1, team1, team2, team3, team4, team5, team6, team7, team8, team9, team10, team12, team11, parthdubey, devanshi, akansha, testimonial1, testimonial2, testimonial3, testimonial4 } from '@/assets';
+// importing all the images from assets folder that are being used in testimonial_data
 
 const nav_data = [
     {
@@ -129,4 +130,163 @@ const event_data = [
 
     },
 ]
-export { nav_data, blog_data, event_data };
+
+const NGO_about_mission_vision = [
+    {
+        eventKey: "about",
+        title: "About",
+        content: "PRAYAN FOUNDATION, a non-governmental organization..."
+    },
+    {
+        eventKey: "mission",
+        title: "Mission",
+        content: "Prayan Foundation is dedicated for creating..."
+    },
+    {
+        eventKey: "vision",
+        title: "Vision",
+        content: "We aim at creation of society where every individual..."
+    }
+
+]
+
+const cards_data = [
+    {
+        name: 'Parth Ojha',
+        role: 'Founder &  President',
+        imageSrc: { team1 },
+        linkedin: 'https://www.linkedin.com/in/parth-ojha-a91084227',
+        insta: 'https://instagram.com/nexusgtr?igshid=MzRlODBiNWFlZA==',
+        gmail: ''
+    },
+    {
+        name: 'Avni Jain',
+        role: 'Vice President',
+        imageSrc: { team2 },
+        linkedin: 'https://www.linkedin.com/in/avni-jain-34263a211',
+        insta: 'https://instagram.com/jnavni29?igshid=OTk0YzhjMDVlZA==',
+        gmail: ''
+    },
+    {
+        name: 'Navya Shrivastava',
+        role: 'General Secretary',
+        imageSrc: { team3 },
+        linkedin: 'https://www.linkedin.com/in/navya-shrivastava-534446225',
+        insta: 'https://instagram.com/navyaaaa.18?igshid=MzNlNGNkZWQ4Mg==',
+        gmail: ''
+    },
+    {
+        name: 'Samya Jain',
+        role: 'Treasurer',
+        imageSrc: { team4 },
+        linkedin: '',
+        insta: '',
+        gmail: ''
+    },
+    {
+        name: 'Dhruv Vijaywergia',
+        role: 'Research and Development Head',
+        imageSrc: { team5 },
+        linkedin: '',
+        insta: '',
+        gmail: ''
+    },
+    {
+        name: 'Chandan Jhanwar',
+        role: 'Corporate Head',
+        imageSrc: { team6 },
+        linkedin: '',
+        insta: '',
+        gmail: ''
+    },
+    {
+        name: 'Prince Kumar Yadav',
+        role: 'Logistics and Communications Head',
+        imageSrc: { team7 },
+        linkedin: '',
+        insta: '',
+        gmail: ''
+    },
+    {
+        name: 'Jhalak Grover',
+        role: 'Content Head',
+        imageSrc: { team8 },
+        linkedin: '',
+        insta: '',
+        gmail: ''
+    },
+    {
+        name: 'Akansha Sinha',
+        role: 'Human Resources Head',
+        imageSrc: { akansha },
+        linkedin: '',
+        insta: '',
+        gmail: ''
+    },
+    {
+        name: 'Devanshi Bhardwaj',
+        role: 'Graphics Head',
+        imageSrc: { devanshi },
+        linkedin: '',
+        insta: '',
+        gmail: ''
+    },
+    {
+        name: 'Parth Dubey',
+        role: 'Project Director Akshaypatra',
+        imageSrc: { parthdubey },
+        linkedin: '',
+        insta: '',
+        gmail: ''
+    },
+    {
+        name: 'Kavitesh Lodhi',
+        role: 'Project Director Swashrit',
+        imageSrc: { team11 },
+        linkedin: '',
+        insta: '',
+        gmail: ''
+    },
+    {
+        name: 'Aryan Sapra',
+        role: 'Project Director Prakrit',
+        imageSrc: { team12 },
+        linkedin: '',
+        insta: '',
+        gmail: ''
+    },
+]
+
+const testimonials_data = [
+    {
+        name: 'Disha Goel',
+        role: 'Member at Akshaypatra',
+        imageSrc: { testimonial1 },
+        text:
+            "For me, Prayan is a source of joy and gratefulness through which I feel I make a tiny contribution towards the well-being of society. It is like a family to me where we work together, learn and grow.",
+    },
+    {
+        name: 'Nitish Pandey',
+        role: 'Member at Project Swashrit',
+        imageSrc: { testimonial2 },
+        text:
+            "I absolutely love this organization! Their unwavering dedication to their mission is inspiring, and the impact they have made is truly remarkable. Their team is committed to making a difference.",
+    },
+    {
+        name: 'Priyam Tiwari',
+        role: 'Joint Secretary ZHDC Unit',
+        imageSrc: { testimonial3 }
+        ,
+        text: "Prayan, an exceptional organization, with an amazing team and their unwavering commitment to empowering communities in need has been inspiring, and I am grateful to be a part of their meaningful work.",
+    },
+    {
+        name: 'Ananya Gupta',
+        role: 'Member Miranda House Unit',
+        imageSrc: { testimonial4 },
+        text:
+            "Prayan according to me is an organization which tries its best to make this world a better place for everyone be it humans or animals.",
+    },
+
+
+];
+export { nav_data, blog_data, event_data, NGO_about_mission_vision, cards_data, testimonials_data };
