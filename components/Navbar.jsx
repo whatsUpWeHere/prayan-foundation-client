@@ -5,9 +5,14 @@ import { logo } from "@/assets";
 import Link from "next/link";
 import { nav_data } from "@/constants";
 
-import { UserButton } from "@clerk/nextjs";
-import { useUser } from "@clerk/nextjs";
-import { useAuth } from "@clerk/nextjs";
+import {
+    UserButton,
+    useUser,
+    useAuth,
+    SignedOut,
+    SignedIn,
+    SignInButton,
+} from "@clerk/nextjs";
 
 const Navbar = () => {
     const [active, setActive] = useState("");
@@ -49,7 +54,6 @@ const Navbar = () => {
             className={`sticky-nav  text-white sticky top-0 transition-bg duration-300 z-10 h-30 items-center `}
             style={{ backgroundColor }}
         >
-            <UserButton />
 
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between">
@@ -92,22 +96,28 @@ const Navbar = () => {
                         </nav>
                     </div>
                     <div className="flex items-center gap-4">
-                        <div className="sm:flex sm:gap-4">
-                            <Link
-                                className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"
-                                href="/"
-                            >
-                                Login
-                            </Link>
-                            <div className="hidden sm:flex">
+                        <SignedIn>
+                            <UserButton afterSignOutUrl="/"  className="w-[30px]" />
+                        </SignedIn>
+                        <SignedOut>
+                            <SignInButton/>
+                            <div className="sm:flex sm:gap-4">
                                 <Link
-                                    className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
-                                    href="/"
+                                    className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"
+                                    href="/sign-in"
                                 >
-                                    Register
+                                    Login
                                 </Link>
+                                <div className="hidden sm:flex">
+                                    <Link
+                                        className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
+                                        href="/"
+                                    >
+                                        Register
+                                    </Link>
+                                </div>
                             </div>
-                        </div>
+                        </SignedOut>
 
                         <div className="hamburger-menu flex items-center md:order-2">
                             <button
