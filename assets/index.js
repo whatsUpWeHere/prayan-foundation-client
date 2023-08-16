@@ -2,7 +2,7 @@ import logo from './logo.png';
 import contact from './img/contact.jpg';
 import blog_1 from './img/blog-1.jpg';
 import event_1 from './img/event-1.jpg';
-import about from './img/about.png'
+import about from './img/about.png';
 
 import team1 from './img/team1.png';
 import team2 from './img/team2.png';
