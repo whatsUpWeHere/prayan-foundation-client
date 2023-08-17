@@ -4,6 +4,7 @@ import Image from "next/image";
 import { logo } from "@/assets";
 import Link from "next/link";
 import { nav_data } from "@/constants";
+import UserDropdown from "./UserDropdown";
 
 import {
     UserButton,
@@ -19,8 +20,10 @@ const Navbar = () => {
     const [scrolling, setScrolling] = useState(false);
     const [toggleDropdown, setToggleDropdown] = useState(false);
 
-    const { isLoaded, isSignedIn, user } = useUser();
-    const { userId, sessionId, getToken } = useAuth();
+    const { user } = useUser();
+
+    {user && (<UserDropdown/>)}
+    
 
     // console.log("isloaded: ", isLoaded);
     // console.log("isSignedIn: ", isSignedIn);
@@ -100,7 +103,6 @@ const Navbar = () => {
                             <UserButton afterSignOutUrl="/"  className="w-[30px]" />
                         </SignedIn>
                         <SignedOut>
-                            <SignInButton/>
                             <div className="sm:flex sm:gap-4">
                                 <Link
                                     className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"

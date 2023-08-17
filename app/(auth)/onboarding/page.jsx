@@ -2,23 +2,60 @@
 
 import { currentUser } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
-import cookies from "universal-cookie";
+import { clerkClient } from "@clerk/nextjs";
 
 const page = async () => {
     const user = await currentUser();
     if (!user) return null;
-
-    const { emailAddresses, firstName, lastName } = user;
+    const { emailAddresses, firstName, lastName, id, profileImageUrl } = user;
     const email = emailAddresses[0].emailAddress;
     const name = firstName + " " + lastName;
 
-    // saving the user to database
-    const userObject = {
+    const updateMetadata = async ({
         name,
         email,
+        profileImageUrl,
+        role,
+        donation,
+        dbID,
+    }) => {
+        // Update user data using Clerk's function
+
+        const userCookieObj = {
+            unsafeMetadata: {
+                name,
+                email,
+                profileImageUrl,
+                role,
+                donation,
+                dbID,
+            },
+        };
+        console.log("unsafeMetadata is", userCookieObj);
+        try {
+            const response = await clerkClient.users.updateUser(
+                id,
+                userCookieObj
+            );
+
+            if (response) {
+                console.log("Metadata updated successfully", response);
+                const refreshedUser = await clerkClient.users.getUser(user.id);
+                console.log("refreshed user is", refreshedUser);
+            }
+            console.log("user donations is: ", ...donation);
+        } catch (err) {
+            console.error("Error updating metadata", err);
+        }
     };
 
+    // saving the user to database
+
     try {
+        const userObject = {
+            name,
+            email,
+        };
         const response = await fetch(
             "http://localhost:5000/api/auth/createuser",
             {
@@ -32,32 +69,25 @@ const page = async () => {
 
         const userData = await response.json();
         console.log("database response: ", userData);
+        const { user } = userData;
 
-        // checking if user with given email already present in database
-        // 400 - already present, 201 - created
-
-        // creating a cookie
-        if (response.status === 400 || response.status === 201) {
-            
-            const { role, donations, _id } = userData.user;
-            const authObject = {
-                _id,
-                name,
-                email,
-                role,
-                donations,
-            };
-            const Cookies = new cookies();
-            Cookies.set("authObject", JSON.stringify(authObject));
-
-            console.log("authObject is: ", Cookies.get("authObject"));
-        } else {
-            console.log("Error setting cookie");
-        }
+        const newUserObj = {
+            name,
+            email,
+            profileImageUrl,
+            role: user.role,
+            donation: user.donations.reduce(
+                (sum, donation) => sum + donation.amount,
+                0
+            ),
+            dbID: user._id,
+        };
+        console.log("newUserobject is ", newUserObj);
+        updateMetadata(newUserObj);
     } catch (error) {
-        console.log(error);
-        return;
+        console.log("some error occured in creating cookies ", error);
     }
+
     redirect("/");
 };
 
