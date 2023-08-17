@@ -23,7 +23,7 @@ const UserDropdown = () => {
         // <SignedIn>
         <Dropdown
             inline
-            label={<Avatar alt="User settings" img={profileImageUrl} />}
+            label=<Avatar alt="User settings" img={profileImageUrl} />
             className="bg-[#374151] text-white rounded-xl"
         >
             <Dropdown.Header>
@@ -61,7 +61,7 @@ const UserDropdown = () => {
             <Dropdown.Item className="bg-red-500 text-gray-200 semi-bold hover:bg-teal-500 rounded-lg">
                 <button
                     onclick={signOut}
-                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                    className="bg-red-500 w-full hover:bg-teal-500 text-white font-bold py-2 px-4 rounded"
                 >
                     Sign out
                 </button>

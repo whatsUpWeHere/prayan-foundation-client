@@ -22,9 +22,6 @@ const Navbar = () => {
 
     const { user } = useUser();
 
-    {user && (<UserDropdown/>)}
-    
-
     // console.log("isloaded: ", isLoaded);
     // console.log("isSignedIn: ", isSignedIn);
     // console.log("sessionId: ", sessionId);
@@ -57,7 +54,6 @@ const Navbar = () => {
             className={`sticky-nav  text-white sticky top-0 transition-bg duration-300 z-10 h-30 items-center `}
             style={{ backgroundColor }}
         >
-
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between">
                     <div className="md:flex md:items-center md:gap-12">
@@ -99,9 +95,17 @@ const Navbar = () => {
                         </nav>
                     </div>
                     <div className="flex items-center gap-4">
-                        <SignedIn>
-                            <UserButton afterSignOutUrl="/"  className="w-[30px]" />
-                        </SignedIn>
+                        {user ? (
+                            <UserDropdown />
+                        ) : (
+                            <SignedIn>
+                                )
+                                <UserButton
+                                    afterSignOutUrl="/"
+                                    className="w-[30px]"
+                                />
+                            </SignedIn>
+                        )}
                         <SignedOut>
                             <div className="sm:flex sm:gap-4">
                                 <Link
@@ -161,7 +165,7 @@ const Navbar = () => {
                                 className={`z-50 ${
                                     toggleDropdown ? "visible" : "hidden"
                                 } my-4  list-none  divide-y divide-gray-100 rounded-lg shadow bg-gray-700 dark:divide-gray-600
-                        absolute top-[3.5rem] right-[.25rem] w-[50%] flex flex-col text-2xl items-start justify-center p-4 `}
+                    absolute top-[3.5rem] right-[.25rem] w-[50%] flex flex-col text-2xl items-start justify-center p-4 `}
                                 id="user-dropdown"
                             >
                                 <div className="px-4 py-3">
@@ -186,7 +190,7 @@ const Navbar = () => {
                                                             ? "text-white border-2 border-teal-600"
                                                             : "text-gray-200"
                                                     }  
-                                                    focus: focus:bg-teal-600  hover:bg-teal-500 text-gray-200 dark:hover:text-white`}
+                                                focus: focus:bg-teal-600  hover:bg-teal-500 text-gray-200 dark:hover:text-white`}
                                                     onClick={() => {
                                                         setActive(item.name);
                                                     }}
