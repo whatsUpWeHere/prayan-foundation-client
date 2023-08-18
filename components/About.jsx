@@ -16,70 +16,6 @@ import TestimonialSection from "@/components/TestimonialSection";
 import Cards from "@/components/Cardsdata";
 import { NGO_about_mission_vision } from "@/constants";
 // import { about, facts } from "@/assets";
-import {
-    logo,
-    contact,
-    blog_1,
-    event_1,
-    team1,
-    team2,
-    team3,
-    team4,
-    team5,
-    team6,
-    team7,
-    team8,
-    team9,
-    team10,
-    team11,
-    team12,
-    parthdubey,
-    devanshi,
-    akansha,
-    testimonial1,
-    testimonial2,
-    testimonial3,
-    testimonial4,
-    facts,
-    about,
-} from "@/assets";
-
-import img from "@/assets/img/about.png"
-console.log(img);
-console.log(about);
-const obj = {
-    logo,
-    contact,
-    blog_1,
-    event_1,
-    team1,
-    team2,
-    team3,
-    team4,
-    team5,
-    team6,
-    team7,
-    team8,
-    team9,
-    team10,
-    team11,
-    team12,
-    parthdubey,
-    devanshi,
-    akansha,
-    testimonial1,
-    testimonial2,
-    testimonial3,
-    testimonial4,
-    facts,
-    about,
-};
-
-console.log(facts);
-
-for (let key in obj) {
-    // console.log(key, obj[key]);
-}
 
 function About() {
     return (
@@ -88,7 +24,7 @@ function About() {
             <div>
                 <Row>
                     <Col md={4}>
-                    <Image rounded src={img} alt="me" left width={40} height={100}/>
+                    {/* <Image rounded src={img} alt="me" left width={40} height={100}/> */}
                         {/* <Image rounded src={about} alt="me" left /> */}
                     </Col>
                     <Col md={8}>
