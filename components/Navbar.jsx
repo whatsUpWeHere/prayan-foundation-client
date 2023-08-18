@@ -22,12 +22,6 @@ const Navbar = () => {
 
     const { user } = useUser();
 
-    // console.log("isloaded: ", isLoaded);
-    // console.log("isSignedIn: ", isSignedIn);
-    // console.log("sessionId: ", sessionId);
-    // console.log("userId: ", userId);
-    // console.log("getToken: ", getToken);
-    // console.log("user: ", user);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -117,7 +111,7 @@ const Navbar = () => {
                                 <div className="hidden sm:flex">
                                     <Link
                                         className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
-                                        href="/"
+                                        href="/sign-up"
                                     >
                                         Register
                                     </Link>
