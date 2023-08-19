@@ -5,6 +5,7 @@ import { redirect } from "next/navigation";
 import { clerkClient } from "@clerk/nextjs";
 
 const page = async () => {
+    const backend_url = "https://ngo-site-backend.onrender.com";
     const user = await currentUser();
     if (!user) return null;
     const { emailAddresses, firstName, lastName, id, profileImageUrl } = user;
@@ -56,16 +57,13 @@ const page = async () => {
             name,
             email,
         };
-        const response = await fetch(
-            "http://localhost:5000/api/auth/createuser",
-            {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(userObject),
-            }
-        );
+        const response = await fetch(backend_url + "/api/auth/createuser", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(userObject),
+        });
 
         const userData = await response.json();
         console.log("database response: ", userData);
