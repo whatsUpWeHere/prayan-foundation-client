@@ -150,11 +150,44 @@ const NGO_about_mission_vision = [
 
 ]
 
-const cards_data = [
+const testimonialData = [
+    {
+        name: 'Disha Goel',
+        role: 'Member at Akshaypatra',
+        imageSrc: '/images/testimonial-1.jpeg',
+        text:
+            "For me, Prayan is a source of joy and gratefulness through which I feel I make a tiny contribution towards the well-being of society. It is like a family to me where we work together, learn and grow.",
+    },
+    {
+        name: 'Nitish Pandey',
+        role: 'Member at Project Swashrit',
+        imageSrc: '/images/testimonial-2.jpeg',
+        text:
+            "I absolutely love this organization! Their unwavering dedication to their mission is inspiring, and the impact they have made is truly remarkable. Their team is committed to making a difference.",
+    },
+    {
+        name: 'Priyam Tiwari',
+        role: 'Joint Secretary ZHDC Unit',
+        imageSrc: '/images/testimonial-3.jpg',
+        text:
+            "Prayan, an exceptional organization, with an amazing team and their unwavering commitment to empowering communities in need has been inspiring, and I am grateful to be a part of their meaningful work.",
+    },
+    {
+        name: 'Ananya Gupta',
+        role: 'Member Miranda House Unit',
+        imageSrc: '/images/testimonial-4.jpeg',
+        text:
+            "Prayan according to me is an organization which tries its best to make this world a better place for everyone be it humans or animals.",
+    },
+
+    // Add more testimonial objects here
+];
+
+const Cardsdata = [
     {
         name: 'Parth Ojha',
         role: 'Founder &  President',
-        imageSrc: { team1 },
+        imageSrc: 'images/team1.png',
         linkedin: 'https://www.linkedin.com/in/parth-ojha-a91084227',
         insta: 'https://instagram.com/nexusgtr?igshid=MzRlODBiNWFlZA==',
         gmail: ''
@@ -162,7 +195,7 @@ const cards_data = [
     {
         name: 'Avni Jain',
         role: 'Vice President',
-        imageSrc: { team2 },
+        imageSrc: 'images/team2.png',
         linkedin: 'https://www.linkedin.com/in/avni-jain-34263a211',
         insta: 'https://instagram.com/jnavni29?igshid=OTk0YzhjMDVlZA==',
         gmail: ''
@@ -170,7 +203,7 @@ const cards_data = [
     {
         name: 'Navya Shrivastava',
         role: 'General Secretary',
-        imageSrc: { team3 },
+        imageSrc: 'images/team3.png',
         linkedin: 'https://www.linkedin.com/in/navya-shrivastava-534446225',
         insta: 'https://instagram.com/navyaaaa.18?igshid=MzNlNGNkZWQ4Mg==',
         gmail: ''
@@ -178,7 +211,7 @@ const cards_data = [
     {
         name: 'Samya Jain',
         role: 'Treasurer',
-        imageSrc: { team4 },
+        imageSrc: 'images/team4.png',
         linkedin: '',
         insta: '',
         gmail: ''
@@ -186,7 +219,7 @@ const cards_data = [
     {
         name: 'Dhruv Vijaywergia',
         role: 'Research and Development Head',
-        imageSrc: { team5 },
+        imageSrc: 'images/team5.png',
         linkedin: '',
         insta: '',
         gmail: ''
@@ -194,7 +227,7 @@ const cards_data = [
     {
         name: 'Chandan Jhanwar',
         role: 'Corporate Head',
-        imageSrc: { team6 },
+        imageSrc: 'images/team6.png',
         linkedin: '',
         insta: '',
         gmail: ''
@@ -202,7 +235,7 @@ const cards_data = [
     {
         name: 'Prince Kumar Yadav',
         role: 'Logistics and Communications Head',
-        imageSrc: { team7 },
+        imageSrc: 'images/team7.png',
         linkedin: '',
         insta: '',
         gmail: ''
@@ -210,7 +243,7 @@ const cards_data = [
     {
         name: 'Jhalak Grover',
         role: 'Content Head',
-        imageSrc: { team8 },
+        imageSrc: 'images/team8.png',
         linkedin: '',
         insta: '',
         gmail: ''
@@ -218,7 +251,7 @@ const cards_data = [
     {
         name: 'Akansha Sinha',
         role: 'Human Resources Head',
-        imageSrc: { akansha },
+        imageSrc: 'images/akansha.jpg',
         linkedin: '',
         insta: '',
         gmail: ''
@@ -226,7 +259,7 @@ const cards_data = [
     {
         name: 'Devanshi Bhardwaj',
         role: 'Graphics Head',
-        imageSrc: { devanshi },
+        imageSrc: 'images/devanshi.png',
         linkedin: '',
         insta: '',
         gmail: ''
@@ -234,7 +267,7 @@ const cards_data = [
     {
         name: 'Parth Dubey',
         role: 'Project Director Akshaypatra',
-        imageSrc: { parthdubey },
+        imageSrc: 'images/parthdubey.jpg',
         linkedin: '',
         insta: '',
         gmail: ''
@@ -242,7 +275,7 @@ const cards_data = [
     {
         name: 'Kavitesh Lodhi',
         role: 'Project Director Swashrit',
-        imageSrc: { team11 },
+        imageSrc: 'images/team11.png',
         linkedin: '',
         insta: '',
         gmail: ''
@@ -250,43 +283,13 @@ const cards_data = [
     {
         name: 'Aryan Sapra',
         role: 'Project Director Prakrit',
-        imageSrc: { team12 },
+        imageSrc: 'images/team12.png',
         linkedin: '',
         insta: '',
         gmail: ''
     },
-]
-
-const testimonials_data = [
-    {
-        name: 'Disha Goel',
-        role: 'Member at Akshaypatra',
-        imageSrc: { testimonial1 },
-        text:
-            "For me, Prayan is a source of joy and gratefulness through which I feel I make a tiny contribution towards the well-being of society. It is like a family to me where we work together, learn and grow.",
-    },
-    {
-        name: 'Nitish Pandey',
-        role: 'Member at Project Swashrit',
-        imageSrc: { testimonial2 },
-        text:
-            "I absolutely love this organization! Their unwavering dedication to their mission is inspiring, and the impact they have made is truly remarkable. Their team is committed to making a difference.",
-    },
-    {
-        name: 'Priyam Tiwari',
-        role: 'Joint Secretary ZHDC Unit',
-        imageSrc: { testimonial3 }
-        ,
-        text: "Prayan, an exceptional organization, with an amazing team and their unwavering commitment to empowering communities in need has been inspiring, and I am grateful to be a part of their meaningful work.",
-    },
-    {
-        name: 'Ananya Gupta',
-        role: 'Member Miranda House Unit',
-        imageSrc: { testimonial4 },
-        text:
-            "Prayan according to me is an organization which tries its best to make this world a better place for everyone be it humans or animals.",
-    },
 
 
+    // Add more testimonial objects here
 ];
-export { nav_data, blog_data, event_data, NGO_about_mission_vision, cards_data, testimonials_data };
+export { nav_data, blog_data, event_data, NGO_about_mission_vision, testimonialData, Cardsdata };
