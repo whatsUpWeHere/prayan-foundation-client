@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import Image from 'react-bootstrap/Image'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Tab from 'react-bootstrap/Tab';
@@ -13,7 +12,7 @@ import {FaLinkedinIn, FaInstagram, FaMailBulk } from 'react-icons/fa';
 import TestimonialSection from '@/components/TestimonialSection';
 import CountUp from 'react-countup';
 import Cards from '@/components/Cards';
-
+import Image from 'next/image';
 
 
 function About() {
@@ -23,9 +22,11 @@ function About() {
         <Col md={4} >
           <Image
             rounded
-            src={'./images/About.png'}
+            src={'/images/About.png'}
             alt="me"
-            left
+            
+            width={400}
+            height={400}
           />
         </Col>
         <Col md={8}>
@@ -43,14 +44,14 @@ function About() {
               With a functional strength of 500+ members, we have a dedicated team of individuals working towards our goals. Alongside our members, we also have a large network of volunteers, with more than 2000 individuals actively contributing to our cause. Together, we strive to make a positive impact in our communities and society.
             </Tab>
             <Tab eventKey="mission" title="Misson">
-              Prayan Foundation is dedicated for creating a sustainable and inclusive society by promoting women empowerment, generating employment opportunities, ensuring children's welfare, addressing mental health concerns, protecting animal rights, enhancing food security and distribution, raising environmental awareness, advocating for personal hygiene and sanitation, and providing compassionate care for the elderly.
-              Through community engagement and resource mobilization, Prayan Foundation endeavors to create a lasting impact on individuals' lives and society as a whole. Together, we can build a world that values empowerment, compassion, and the well-being of all living beings.
+              Prayan Foundation is dedicated for creating a sustainable and inclusive society by promoting women empowerment, generating employment opportunities, ensuring children&apos;s welfare, addressing mental health concerns, protecting animal rights, enhancing food security and distribution, raising environmental awareness, advocating for personal hygiene and sanitation, and providing compassionate care for the elderly.
+              Through community engagement and resource mobilization, Prayan Foundation endeavors to create a lasting impact on individuals&apos; lives and society as a whole. Together, we can build a world that values empowerment, compassion, and the well-being of all living beings.
             </Tab>
             <Tab eventKey="vision" title="Vison">
               We aim at creation of society where every individual, regardless of age, gender, or background, is empowered, supported, and given the opportunity to lead a fulfilling life.
               At Prayan Foundation, our vision is to build a world where all individuals, regardless of their background or circumstances, can live in peace, dignity, and prosperity.
               We are committed to aligning our efforts with the United Nations Sustainable Development Goals (SDGs) and other international conventions alongwith the ideas of  Honorable Prime Minister of India@75 to create a lasting impact on a global scale.
-              Our vision encompasses the following key principles: Sustainable Development, Gender Equality and Women's Empowerment, Climate Action and Environmental Stewardship, Prayan Foundation aspires to be a driving force in promoting sustainable development, social justice, and global harmony.
+              Our vision encompasses the following key principles: Sustainable Development, Gender Equality and Women&apos;s Empowerment, Climate Action and Environmental Stewardship, Prayan Foundation aspires to be a driving force in promoting sustainable development, social justice, and global harmony.
               Through collaboration with stakeholders, governments, and other NGOs, we seek to create transformative change and a brighter future for generations to come.
             </Tab>
           </Tabs>
