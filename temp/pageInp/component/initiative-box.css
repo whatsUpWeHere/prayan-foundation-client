@@ -1,0 +1,37 @@
+#main-box {
+    height: 55em;
+    width: 25em;
+    overflow: none;
+}
+
+#initiative-img {
+    margin-left: 7.5%;
+}
+
+#initiative-img img {
+    height: 70%;
+    width: 90%;
+    transition: transform 1s;
+
+
+}
+
+#initiative-img img:hover {
+    transform: scale(1.05);
+
+}
+
+#initiative-content {
+    text-align: center;
+    height: 10em;
+    overflow: hidden;
+}
+
+#initiative-button :hover {
+    transition: transform 1s;
+    transform: scale(1.05);
+}
+
+#footer-in {
+    margin-left: 15%;
+}

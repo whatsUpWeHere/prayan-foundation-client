@@ -12,7 +12,7 @@ import {
 const EventCard = ({ title, description, date, time, location }) => {
     return (
         <div>
-            <div className="event-item bg-blue-100 mb-6">
+            <div className="event-item bg-blue-100 mb-6 p-4">
                 <Image src={event_1} alt="Image" className="w-full"></Image>
                 <div className="event-content p-6 pl-2 flex">
                     <div className="event-meta mr-10 flex flex-col  w-[145px] py-1">

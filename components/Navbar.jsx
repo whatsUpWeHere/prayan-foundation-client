@@ -4,7 +4,7 @@ import Image from "next/image";
 import { logo } from "@/assets";
 import Link from "next/link";
 import { nav_data } from "@/constants";
-import UserDropdown from "./UserDropdown";
+import UserProfileCard from "./UserProfileCard";
 
 import {
     UserButton,
@@ -90,7 +90,7 @@ const Navbar = () => {
                     </div>
                     <div className="flex items-center gap-4">
                         {user ? (
-                            <UserDropdown />
+                            <UserProfileCard />
                         ) : (
                             <SignedIn>
                                 )

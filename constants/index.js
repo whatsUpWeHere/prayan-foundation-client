@@ -135,17 +135,17 @@ const NGO_about_mission_vision = [
     {
         eventKey: "about",
         title: "About",
-        content: "PRAYAN FOUNDATION, a non-governmental organization..."
+        content: "PRAYAN FOUNDATION, a non-governmental organization registered under NITI AAYOG, was founded by a group of motivated undergraduate students led by Mr. Parth Ojha, who is recognized as the recipient of the President of India Award in field of Social Service. Our primary objective is to create the positive change we envision for the world. We strongly believe that a fulfilling life involves serving others, and we carry this belief with love, compassion, and kindness in our hearts every day. Prayan Foundation is committed to realizing the goals of India@75, guided by the esteemed Prime Minister of India. Initially, we launched three central projects—Project Akshaypatra, Project Swashrit, and Project Prakrit—that garnered participation from students across Delhi University. Subsequently, we decentralized our efforts by establishing individual umbrella units in colleges to extend our support to more individuals in need. Our organization has a strong presence in Delhi University, with units in more than 14 prominent colleges. In addition to that, we also have units in 5+ campus across the nation extending & serving our sense of selfless service. With a functional strength of 500+ members, we have a dedicated team of individuals working towards our goals. Alongside our members, we also have a large network of volunteers, with more than 2000 individuals actively contributing to our cause. Together, we strive to make a positive impact in our communities and society."
     },
     {
         eventKey: "mission",
         title: "Mission",
-        content: "Prayan Foundation is dedicated for creating..."
+        content: "Prayan Foundation is dedicated for creating a sustainable and inclusive society by promoting women empowerment, generating employment opportunities, ensuring children's welfare, addressing mental health concerns, protecting animal rights, enhancing food security and distribution, raising environmental awareness, advocating for personal hygiene and sanitation, and providing compassionate care for the elderly. Through community engagement and resource mobilization, Prayan Foundation endeavors to create a lasting impact on individuals' lives and society as a whole. Together, we can build a world that values empowerment, compassion, and the well-being of all living beings."
     },
     {
         eventKey: "vision",
         title: "Vision",
-        content: "We aim at creation of society where every individual..."
+        content: "We aim at creation of society where every individual, regardless of age, gender, or background, is empowered, supported, and given the opportunity to lead a fulfilling life.At Prayan Foundation, our vision is to build a world where all individuals, regardless of their background or circumstances, can live in peace, dignity, and prosperity.We are committed to aligning our efforts with the United Nations Sustainable Development Goals(SDGs) and other international conventions alongwith the ideas of Honorable Prime Minister of India@75 to create a lasting impact on a global scale.Our vision encompasses the following key principles: Sustainable Development, Gender Equality and Women's Empowerment, Climate Action and Environmental Stewardship, Prayan Foundation aspires to be a driving force in promoting sustainable development, social justice, and global harmony. Through collaboration with stakeholders, governments, and other NGOs, we seek to create transformative change and a brighter future for generations to come."
     }
 
 ]
