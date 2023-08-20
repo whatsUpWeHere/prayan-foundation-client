@@ -1,14 +1,14 @@
 import React from "react";
 import About from '@/components/About';
+import SectionWrapper from "@/hoc/SectionWrapper";
 
 const about = () => {
   return (
     <>
-      <h1>about page</h1>
       <About/>
 
     </>
   );
 };
 
-export default about;
+export default SectionWrapper(about);

@@ -7,7 +7,7 @@ import Tabs from 'react-bootstrap/Tabs';
 import { Col } from 'react-bootstrap';
 import { Parallax } from 'react-parallax';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {FaLinkedinIn, FaInstagram, FaMailBulk } from 'react-icons/fa';
+import { FaLinkedinIn, FaInstagram, FaMailBulk } from 'react-icons/fa';
 // import './mem-card.css'
 import TestimonialSection from '@/components/TestimonialSection';
 import CountUp from 'react-countup';
@@ -18,18 +18,26 @@ import Image from 'next/image';
 function About() {
   return (
     <div>
-      <Row>
-        <Col md={4} >
+      <Row className=''>
+        <Col md={4} className='py-7 h-[90%] overflow-hidden border border-red-500' >
           <Image
             rounded
             src={'/images/About.png'}
             alt="me"
-            
+
             width={400}
-            height={400}
+            height={100}
+            className='object-contain '
           />
         </Col>
         <Col md={8}>
+          <div className=" flex items-start justify-center flex-col mx-auto pt-13">
+            <h3 className=" text-2xl text-[#fdbe33]">
+              Learn About Us</h3>
+            <p className="text-[#4A4C70] text-5xl text-center letter-wider font-semibold  py-7 ">
+              Prayan Foundation
+            </p>
+          </div>
           <Tabs
             defaultActiveKey="about"
             id="fill-tab-example"
@@ -57,8 +65,8 @@ function About() {
           </Tabs>
         </Col>
       </Row>
-      <Parallax bgImage={'./images/facts.jpg'} strength={500} style={{ height: '400px', width: '100%' }}>
-        <div className='facts' style={{ height: '400px', width: '100%' }}>
+      <Parallax bgImage={'./images/facts.jpg'} strength={500} style={{ height: '400px', width: '100%' }} className='my-6 '>
+        <div className='facts bg-black opacity-50' style={{ height: '400px', width: '100%' }}>
           <h1 style={{ textAlign: 'center', paddingTop: '150px', color: 'white' }}>
             <div className="container">
               <div className="row">
@@ -66,10 +74,10 @@ function About() {
                   <div className="facts-item">
                     <i className="flaticon-home"></i>
                     <div className="facts-text">
-                      <h3 className="facts-plus">
-                      <CountUp start={0} end={20} duration={2.5} />+
+                      <h3 className="facts-plus text-5xl font-semibold text-[#ffc23f]">
+                        <CountUp start={0} end={20} duration={2.5} />+
                       </h3>
-                      <p>Colleges</p>
+                      <p className='text-2xl text-[#fdbe33] font-semibold'>Colleges</p>
                     </div>
                   </div>
                 </div>
@@ -77,10 +85,10 @@ function About() {
                   <div className="facts-item">
                     <i className="flaticon-charity"></i>
                     <div className="facts-text">
-                      <h3 className="facts-plus" style={{strength:'500', font:'50px'}} >
-                      <CountUp start={0} end={2000} duration={2.5} />+
+                      <h3 className="facts-plus text-5xl font-semibold text-[#ffc23f]" style={{ strength: '500', font: '50px' }} >
+                        <CountUp start={0} end={2000} duration={2.5} />+
                       </h3>
-                      <p>Volunteers</p>
+                      <p className='text-2xl text-[#fdbe33] font-semibold'>Volunteers</p>
                     </div>
                   </div>
                 </div>
@@ -88,10 +96,10 @@ function About() {
                   <div className="facts-item">
                     <i className="flaticon-kindness"></i>
                     <div className="facts-text">
-                      <h3 className="facts-plus">
-                      <CountUp start={0} end={1000000} duration={2.5} />+
+                      <h3 className="facts-plus text-5xl font-semibold text-[#ffc23f]">
+                        <CountUp start={0} end={1000000} duration={2.5} />+
                       </h3>
-                      <p>Our Goal to Serve People</p>
+                      <p className='text-2xl text-[#fdbe33] font-semibold'>Our Goal to Serve People</p>
                     </div>
                   </div>
                 </div>
@@ -99,10 +107,10 @@ function About() {
                   <div className="facts-item">
                     <i className="flaticon-kindness"></i>
                     <div className="facts-text">
-                      <h3 className="facts-plus">
-                      <CountUp start={0} end={20000} duration={2.5} />
+                      <h3 className="facts-plus text-5xl font-semibold text-[#ffc23f]">
+                        <CountUp start={0} end={20000} duration={2.5} />
                       </h3>
-                      <p>People Served till now</p>
+                      <p className='text-2xl text-[#fdbe33] font-semibold'>People Served till now</p>
                     </div>
                   </div>
                 </div>
@@ -111,10 +119,10 @@ function About() {
           </h1>
         </div>
       </Parallax>
-      <Container >
-        <Cards/>
+      <Container className='mt-13'>
+        <Cards />
       </Container>
-      <TestimonialSection/>
+      <TestimonialSection />
     </div>
   )
 }
