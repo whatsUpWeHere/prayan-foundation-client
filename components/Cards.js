@@ -5,6 +5,7 @@ import { FaInstagram, FaLinkedinIn, FaMailBulk } from 'react-icons/fa';
 import { Cardsdata } from '@/constants';
 import Link from 'next/link';
 import '@/app/globals.css'; // Import your custom CSS file
+import Image from 'next/image';
 
 function Cards() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -32,11 +33,13 @@ function Cards() {
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
-                <img
+                <Image
                   src={card.imageSrc}
                   className="card-img-top"
                   alt="..."
                   id="member-img"
+                  width={100}
+                  height={100}
                 />
                 <div className={` rounded-lg bg-black opacity-75 shadow-lg absolute w-[80%] flex p-4 text-white flex-col justify-center items-center hover-info transition-all duration-300 ${hoveredIndex === index ? 'top-[210px]' : 'top-[270px] '
                   }`}>

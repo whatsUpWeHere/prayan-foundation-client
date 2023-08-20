@@ -187,7 +187,7 @@ const Cardsdata = [
     {
         name: 'Parth Ojha',
         role: 'Founder &  President',
-        imageSrc: 'images/team1.png',
+        imageSrc: '/images/team1.png',
         linkedin: 'https://www.linkedin.com/in/parth-ojha-a91084227',
         insta: 'https://instagram.com/nexusgtr?igshid=MzRlODBiNWFlZA==',
         gmail: ''
@@ -195,7 +195,7 @@ const Cardsdata = [
     {
         name: 'Avni Jain',
         role: 'Vice President',
-        imageSrc: 'images/team2.png',
+        imageSrc: '/images/team2.png',
         linkedin: 'https://www.linkedin.com/in/avni-jain-34263a211',
         insta: 'https://instagram.com/jnavni29?igshid=OTk0YzhjMDVlZA==',
         gmail: ''
@@ -203,7 +203,7 @@ const Cardsdata = [
     {
         name: 'Navya Shrivastava',
         role: 'General Secretary',
-        imageSrc: 'images/team3.png',
+        imageSrc: '/images/team3.png',
         linkedin: 'https://www.linkedin.com/in/navya-shrivastava-534446225',
         insta: 'https://instagram.com/navyaaaa.18?igshid=MzNlNGNkZWQ4Mg==',
         gmail: ''
@@ -211,7 +211,7 @@ const Cardsdata = [
     {
         name: 'Samya Jain',
         role: 'Treasurer',
-        imageSrc: 'images/team4.png',
+        imageSrc: '/images/team4.png',
         linkedin: '',
         insta: '',
         gmail: ''
@@ -219,7 +219,7 @@ const Cardsdata = [
     {
         name: 'Dhruv Vijaywergia',
         role: 'Research and Development Head',
-        imageSrc: 'images/team5.png',
+        imageSrc: '/images/team5.png',
         linkedin: '',
         insta: '',
         gmail: ''
@@ -227,7 +227,7 @@ const Cardsdata = [
     {
         name: 'Chandan Jhanwar',
         role: 'Corporate Head',
-        imageSrc: 'images/team6.png',
+        imageSrc: '/images/team6.png',
         linkedin: '',
         insta: '',
         gmail: ''
@@ -235,7 +235,7 @@ const Cardsdata = [
     {
         name: 'Prince Kumar Yadav',
         role: 'Logistics and Communications Head',
-        imageSrc: 'images/team7.png',
+        imageSrc: '/images/team7.png',
         linkedin: '',
         insta: '',
         gmail: ''
@@ -243,7 +243,7 @@ const Cardsdata = [
     {
         name: 'Jhalak Grover',
         role: 'Content Head',
-        imageSrc: 'images/team8.png',
+        imageSrc: '/images/team8.png',
         linkedin: '',
         insta: '',
         gmail: ''
@@ -251,7 +251,7 @@ const Cardsdata = [
     {
         name: 'Akansha Sinha',
         role: 'Human Resources Head',
-        imageSrc: 'images/akansha.jpg',
+        imageSrc: '/images/akansha.jpg',
         linkedin: '',
         insta: '',
         gmail: ''
@@ -259,7 +259,7 @@ const Cardsdata = [
     {
         name: 'Devanshi Bhardwaj',
         role: 'Graphics Head',
-        imageSrc: 'images/devanshi.png',
+        imageSrc: '/images/devanshi.png',
         linkedin: '',
         insta: '',
         gmail: ''
@@ -267,7 +267,7 @@ const Cardsdata = [
     {
         name: 'Parth Dubey',
         role: 'Project Director Akshaypatra',
-        imageSrc: 'images/parthdubey.jpg',
+        imageSrc: '/images/parthdubey.jpg',
         linkedin: '',
         insta: '',
         gmail: ''
@@ -275,7 +275,7 @@ const Cardsdata = [
     {
         name: 'Kavitesh Lodhi',
         role: 'Project Director Swashrit',
-        imageSrc: 'images/team11.png',
+        imageSrc: '/images/team11.png',
         linkedin: '',
         insta: '',
         gmail: ''
@@ -283,7 +283,7 @@ const Cardsdata = [
     {
         name: 'Aryan Sapra',
         role: 'Project Director Prakrit',
-        imageSrc: 'images/team12.png',
+        imageSrc: '/images/team12.png',
         linkedin: '',
         insta: '',
         gmail: ''
