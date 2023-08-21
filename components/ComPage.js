@@ -23,7 +23,7 @@ const ComPage = () => {
             <div className=" flex items-center justify-center flex-col mx-auto pt-13">
                 <h3 className="font-bold text-2xl text-[#fdbe33]"> Our Initiatives</h3>
                 <p className="text-[#4A4C70] text-5xl text-center letter-wider font-semibold px-13 py-7 ">
-                    Let's know about the working of our Units across India
+                    Let&apos;s know about the working of our Units across India
                 </p>
             </div>
 
