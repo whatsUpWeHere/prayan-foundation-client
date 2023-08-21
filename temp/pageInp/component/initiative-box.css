@@ -2,13 +2,16 @@
     height: 55em;
     width: 25em;
     overflow: none;
+
 }
 
 #initiative-img {
     margin-left: 7.5%;
+
 }
 
 #initiative-img img {
+    border-radius: 10%;
     height: 70%;
     width: 90%;
     transition: transform 1s;
@@ -24,6 +27,7 @@
 #initiative-content {
     text-align: center;
     height: 10em;
+
     overflow: hidden;
 }
 
@@ -32,6 +36,17 @@
     transform: scale(1.05);
 }
 
-#footer-in {
+/* #footer-in {
     margin-left: 15%;
+} */
+
+#read-more-tab {
+    color: rgb(10, 10, 122);
+    font-weight: bold;
+
+}
+
+#min-tab {
+    color: rgba(143, 2, 2, 0.94);
+    font-weight: bold;
 }

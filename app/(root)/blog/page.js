@@ -1,9 +1,13 @@
 import React from "react";
-import Blog from "@/components/Blog"
+import BlogLink from "@/components/nav-link-components/BlogLink"
 import SectionWrapper from "@/hoc/SectionWrapper";
+import TopBGImage from '@/components/TopBGImage';
 
 const blog = () => {
-  return <Blog />;
+  return <>
+    <TopBGImage text="Our Blog" />
+    <BlogLink />
+  </>;
 };
 
-export default SectionWrapper(blog);
+export default blog;

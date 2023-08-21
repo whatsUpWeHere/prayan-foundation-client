@@ -292,4 +292,19 @@ const Cardsdata = [
 
     // Add more testimonial objects here
 ];
-export { nav_data, blog_data, event_data, NGO_about_mission_vision, testimonialData, Cardsdata };
+
+const InitiativeData = [
+    {
+        imageSrc: 'https://source.unsplash.com/random/300x300',
+        title: 'Member 1',
+        paragraph: 'Position 1',
+    },
+    {
+        imageSrc: 'https://source.unsplash.com/random/300x300',
+        title: 'Member 2',
+        paragraph: 'Position 2',
+    },
+    
+];
+
+export { nav_data, blog_data, event_data, NGO_about_mission_vision, testimonialData, Cardsdata, InitiativeData };

@@ -28,8 +28,8 @@ function Cards() {
 
             >
               <div
-                className={`card relative shadow-lg overflow-hidden m-2 flex justify-center flex-col items-center`}
-                style={{ width: '18rem' }}
+                className={`card relative shadow-lg overflow-hidden m-2 flex gap-2 justify-center flex-col items-center`}
+                style={{ width: '16rem' }}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
@@ -38,10 +38,10 @@ function Cards() {
                   className="card-img-top"
                   alt="..."
                   id="member-img"
-                  width={100}
-                  height={100}
+                  width={300}
+                  height={300}
                 />
-                <div className={` rounded-lg bg-black opacity-75 shadow-lg absolute w-[80%] flex p-4 text-white flex-col justify-center items-center hover-info transition-all duration-300 ${hoveredIndex === index ? 'top-[210px]' : 'top-[270px] '
+                <div className={` rounded-lg bg-black opacity-75 shadow-lg absolute w-[80%] flex p-4 pb-6 text-white flex-col justify-center items-center hover-info transition-all duration-300 ${hoveredIndex === index ? 'top-[168px]' : 'top-[228px] '
                   }`}>
                   <p className="font-bold text-[0.875rem]">{card.name}</p>
                   <p className="text-sm text-center">{card.role}</p>

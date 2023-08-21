@@ -1,14 +1,19 @@
 import React from "react";
-import Event from "@/components/Event";
+import EventsLink from "@/components/nav-link-components/EventsLink";
 import SectionWrapper from "@/hoc/SectionWrapper";
+import TopBGImage from "@/components/TopBGImage";
+
 
 const events = () => {
 
   return (
-    <div>
-      <Event />
-    </div>
+    <>
+      <TopBGImage text="Upcoming Events" />
+      <EventsLink/>
+    </>
+
+
   );
 };
 
-export default SectionWrapper(events);
+export default events;

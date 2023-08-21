@@ -45,7 +45,7 @@ const Navbar = () => {
 
     return (
         <header
-            className={`sticky-nav  text-white sticky top-0 transition-bg duration-300 z-10 h-30 items-center `}
+            className={`sticky-nav  text-white sticky top-0 transition-bg duration-300 z-10 h-30 items-center z-100`}
             style={{ backgroundColor }}
         >
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">

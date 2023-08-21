@@ -1,29 +1,20 @@
 'use client'
 import SectionWrapper from "@/hoc/SectionWrapper";
 import React from 'react'
-import Container from 'react-bootstrap/Container'
-
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-import TestimonialSection from '@/components/TestimonialSection';
-import OurInfo from '@/components/OurInfo';
-import Cards from '@/components/Cards';
-import ParallaxComponent from '@/components/ParallaxComponent';
+import AboutLink from '@/components/nav-link-components/AboutLink';
+import TopBGImage from '@/components/TopBGImage';
 
 
 
 const about = () => {
   return (
     <>
-      <OurInfo />
-      <ParallaxComponent />
-      <Container className='mt-13'>
-        <Cards />
-      </Container>
-      <TestimonialSection />
+      <TopBGImage text="Learn about us" />
+      <AboutLink />
 
     </>
   );
 };
 
-export default SectionWrapper(about);
+export default about;

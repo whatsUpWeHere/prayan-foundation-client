@@ -1,14 +1,14 @@
 import React from "react";
-import ContactForm from "@/components/ContactForm";
-import SectionWrapper from "@/hoc/SectionWrapper";
+import AboutLink from "@/components/nav-link-components/AboutLink";
+import TopBGImage from "@/components/TopBGImage";
 
 const contact = () => {
     return (
-        <div>
-            
-            <ContactForm />
-        </div>
+        <>
+            <TopBGImage text="Contact Us"/>
+            <AboutLink />
+        </>
     );
 };
 
-export default SectionWrapper(contact);
+export default contact;

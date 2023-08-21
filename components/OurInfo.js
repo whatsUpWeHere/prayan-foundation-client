@@ -1,6 +1,6 @@
 import React from "react";
-import Image from 'next/image'; import { Col } from 'react-bootstrap';
-
+import Image from 'next/image';
+import { Col } from 'react-bootstrap';
 import Row from 'react-bootstrap/Row'
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
@@ -12,7 +12,7 @@ const OurInfo = () => {
             <Col md={4} className='py-7 h-[90%] overflow-hidden border border-red-500' >
                 <Image
                     rounded
-                    src={'/images/About.png'}
+                    src={'/images/about.png'}
                     alt="me"
 
                     width={400}
