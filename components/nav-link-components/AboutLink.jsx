@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import TestimonialSection from '@/components/TestimonialSection';
 import OurInfo from '@/components/OurInfo';
-import Cards from '@/components/Cards';
+import Cards from '@/components/cards/TeamCards';
 import ParallaxComponent from '@/components/ParallaxComponent';
 
 

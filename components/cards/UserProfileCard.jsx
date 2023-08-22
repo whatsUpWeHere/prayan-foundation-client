@@ -66,11 +66,11 @@ const UserProfileCard = () => {
                     </Link>
                 </SignOutButton>
             </div>
-            {role === "member" && (
+            {role === "admin" && (
                 <div className="flex justify-center items-center pr-6">
                     <Link
-                        href="admin/dashboard"
-                        onClick={() => signOut()}
+                        href="/dashboard"
+                        
                         className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white rounded-lg  focus:ring-4 focus:outline-none bg-sky-600 hover:bg-sky-700 focus:ring-blue-800 mt-4"
                     >
                         Admin Dashboard

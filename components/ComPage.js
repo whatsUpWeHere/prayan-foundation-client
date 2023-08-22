@@ -1,6 +1,6 @@
 "use client"
 // import Team_mem from "./component/Team_member_box";
-import Cards from "@/components/Cards";
+import CabinetCards from "@/components/cards/CabinetCard";
 import Check from "@/components/Check";
 import { InitiativeData } from "@/constants";
 import SectionWrapper from "@/hoc/SectionWrapper";
@@ -17,7 +17,7 @@ const ComPage = () => {
                 </p>
             </div>
 
-            <Cards />
+            <CabinetCards/>
         </section>
         <section>
             <div className=" flex items-center justify-center flex-col mx-auto pt-13">
@@ -34,4 +34,4 @@ const ComPage = () => {
 
 }
 
-export default SectionWrapper(ComPage);
+export default ComPage;

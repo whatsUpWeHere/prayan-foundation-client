@@ -11,7 +11,7 @@ const OurInfo = () => {
         <Row className=''>
             <Col md={4} className='py-7 h-[90%] overflow-hidden border border-red-500' >
                 <Image
-                    rounded
+                    
                     src={'/images/about.png'}
                     alt="me"
 

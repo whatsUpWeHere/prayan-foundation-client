@@ -32,54 +32,63 @@ const nav_data = [
 
 const blog_data = [
     {
+        id: 1,
         title: 'Embracing Elders: Spreading Smiles, Sharing Stories',
         content: "Drive in the month of May At Rojavanam Old Age Home, Saket, we shared moments of joy with the elderly through dance and music performances by our unit members. Engaging games like 'guess the movie' were played, and the seniors thoroughly enjoyed it, evident from their reactions and smiles. We also offered thoughtful gifts of bananas, buttermilk, and biscuits, which brought happiness to the residents. Drive in the month of June We organized a donation drive at Human Peace Foundation, Nirman Vihar, providing essential items like biscuits, hand towels, and sandos to support the well-being of the residents. The smiles on their faces while receiving the gifts were priceless! Through these drives, Sampriyata's continues to spread happiness and care among the elderly, fostering a sense of togetherness and love in every interaction. In summary, the outcomes of Sampriyata endeavors have been incredibly fulfilling. The elderly residents conveyed their happiness and appreciation for the companionship and enjoyable activities we provided. Their enthusiastic feedback and longing for our return stand as a testament to the meaningful bonds we have built. Their joy fuels our motivation, and we eagerly anticipate future visits, persistently spreading happiness and making a positive impact in their lives.",
         image_src: blog_1,
     },
 
     {
+        id: 2,
         title: 'Embracing Elders: Spreading Smiles, Sharing Stories',
         content: "Drive in the month of May At Rojavanam Old Age Home, Saket, we shared moments of joy with the elderly through dance and music performances by our unit members. Engaging games like 'guess the movie' were played, and the seniors thoroughly enjoyed it, evident from their reactions and smiles. We also offered thoughtful gifts of bananas, buttermilk, and biscuits, which brought happiness to the residents. Drive in the month of June We organized a donation drive at Human Peace Foundation, Nirman Vihar, providing essential items like biscuits, hand towels, and sandos to support the well-being of the residents. The smiles on their faces while receiving the gifts were priceless! Through these drives, Sampriyata's continues to spread happiness and care among the elderly, fostering a sense of togetherness and love in every interaction. In summary, the outcomes of Sampriyata endeavors have been incredibly fulfilling. The elderly residents conveyed their happiness and appreciation for the companionship and enjoyable activities we provided. Their enthusiastic feedback and longing for our return stand as a testament to the meaningful bonds we have built. Their joy fuels our motivation, and we eagerly anticipate future visits, persistently spreading happiness and making a positive impact in their lives.",
         image_src: blog_1,
     },
 
     {
+        id: 3,
         title: 'Embracing Elders: Spreading Smiles, Sharing Stories',
         content: "Drive in the month of May At Rojavanam Old Age Home, Saket, we shared moments of joy with the elderly through dance and music performances by our unit members. Engaging games like 'guess the movie' were played, and the seniors thoroughly enjoyed it, evident from their reactions and smiles. We also offered thoughtful gifts of bananas, buttermilk, and biscuits, which brought happiness to the residents. Drive in the month of June We organized a donation drive at Human Peace Foundation, Nirman Vihar, providing essential items like biscuits, hand towels, and sandos to support the well-being of the residents. The smiles on their faces while receiving the gifts were priceless! Through these drives, Sampriyata's continues to spread happiness and care among the elderly, fostering a sense of togetherness and love in every interaction. In summary, the outcomes of Sampriyata endeavors have been incredibly fulfilling. The elderly residents conveyed their happiness and appreciation for the companionship and enjoyable activities we provided. Their enthusiastic feedback and longing for our return stand as a testament to the meaningful bonds we have built. Their joy fuels our motivation, and we eagerly anticipate future visits, persistently spreading happiness and making a positive impact in their lives.",
         image_src: blog_1,
     },
 
     {
+        id: 4,
         title: 'Embracing Elders: Spreading Smiles, Sharing Stories',
         content: "Drive in the month of May At Rojavanam Old Age Home, Saket, we shared moments of joy with the elderly through dance and music performances by our unit members. Engaging games like 'guess the movie' were played, and the seniors thoroughly enjoyed it, evident from their reactions and smiles. We also offered thoughtful gifts of bananas, buttermilk, and biscuits, which brought happiness to the residents. Drive in the month of June We organized a donation drive at Human Peace Foundation, Nirman Vihar, providing essential items like biscuits, hand towels, and sandos to support the well-being of the residents. The smiles on their faces while receiving the gifts were priceless! Through these drives, Sampriyata's continues to spread happiness and care among the elderly, fostering a sense of togetherness and love in every interaction. In summary, the outcomes of Sampriyata endeavors have been incredibly fulfilling. The elderly residents conveyed their happiness and appreciation for the companionship and enjoyable activities we provided. Their enthusiastic feedback and longing for our return stand as a testament to the meaningful bonds we have built. Their joy fuels our motivation, and we eagerly anticipate future visits, persistently spreading happiness and making a positive impact in their lives.",
         image_src: blog_1,
     },
 
     {
+        id: 5,
         title: 'Embracing Elders: Spreading Smiles, Sharing Stories',
         content: "Drive in the month of May At Rojavanam Old Age Home, Saket, we shared moments of joy with the elderly through dance and music performances by our unit members. Engaging games like 'guess the movie' were played, and the seniors thoroughly enjoyed it, evident from their reactions and smiles. We also offered thoughtful gifts of bananas, buttermilk, and biscuits, which brought happiness to the residents. Drive in the month of June We organized a donation drive at Human Peace Foundation, Nirman Vihar, providing essential items like biscuits, hand towels, and sandos to support the well-being of the residents. The smiles on their faces while receiving the gifts were priceless! Through these drives, Sampriyata's continues to spread happiness and care among the elderly, fostering a sense of togetherness and love in every interaction. In summary, the outcomes of Sampriyata endeavors have been incredibly fulfilling. The elderly residents conveyed their happiness and appreciation for the companionship and enjoyable activities we provided. Their enthusiastic feedback and longing for our return stand as a testament to the meaningful bonds we have built. Their joy fuels our motivation, and we eagerly anticipate future visits, persistently spreading happiness and making a positive impact in their lives.",
         image_src: blog_1,
     },
 
     {
+        id: 6,
         title: 'Embracing Elders: Spreading Smiles, Sharing Stories',
         content: "Drive in the month of May At Rojavanam Old Age Home, Saket, we shared moments of joy with the elderly through dance and music performances by our unit members. Engaging games like 'guess the movie' were played, and the seniors thoroughly enjoyed it, evident from their reactions and smiles. We also offered thoughtful gifts of bananas, buttermilk, and biscuits, which brought happiness to the residents. Drive in the month of June We organized a donation drive at Human Peace Foundation, Nirman Vihar, providing essential items like biscuits, hand towels, and sandos to support the well-being of the residents. The smiles on their faces while receiving the gifts were priceless! Through these drives, Sampriyata's continues to spread happiness and care among the elderly, fostering a sense of togetherness and love in every interaction. In summary, the outcomes of Sampriyata endeavors have been incredibly fulfilling. The elderly residents conveyed their happiness and appreciation for the companionship and enjoyable activities we provided. Their enthusiastic feedback and longing for our return stand as a testament to the meaningful bonds we have built. Their joy fuels our motivation, and we eagerly anticipate future visits, persistently spreading happiness and making a positive impact in their lives.",
         image_src: blog_1,
     },
 
     {
+        id: 7,
         title: 'Embracing Elders: Spreading Smiles, Sharing Stories',
         content: "Drive in the month of May At Rojavanam Old Age Home, Saket, we shared moments of joy with the elderly through dance and music performances by our unit members. Engaging games like 'guess the movie' were played, and the seniors thoroughly enjoyed it, evident from their reactions and smiles. We also offered thoughtful gifts of bananas, buttermilk, and biscuits, which brought happiness to the residents. Drive in the month of June We organized a donation drive at Human Peace Foundation, Nirman Vihar, providing essential items like biscuits, hand towels, and sandos to support the well-being of the residents. The smiles on their faces while receiving the gifts were priceless! Through these drives, Sampriyata's continues to spread happiness and care among the elderly, fostering a sense of togetherness and love in every interaction. In summary, the outcomes of Sampriyata endeavors have been incredibly fulfilling. The elderly residents conveyed their happiness and appreciation for the companionship and enjoyable activities we provided. Their enthusiastic feedback and longing for our return stand as a testament to the meaningful bonds we have built. Their joy fuels our motivation, and we eagerly anticipate future visits, persistently spreading happiness and making a positive impact in their lives.",
         image_src: blog_1,
     },
 
     {
+        id: 8,
         title: 'Embracing Elders: Spreading Smiles, Sharing Stories',
         content: "Drive in the month of May At Rojavanam Old Age Home, Saket, we shared moments of joy with the elderly through dance and music performances by our unit members. Engaging games like 'guess the movie' were played, and the seniors thoroughly enjoyed it, evident from their reactions and smiles. We also offered thoughtful gifts of bananas, buttermilk, and biscuits, which brought happiness to the residents. Drive in the month of June We organized a donation drive at Human Peace Foundation, Nirman Vihar, providing essential items like biscuits, hand towels, and sandos to support the well-being of the residents. The smiles on their faces while receiving the gifts were priceless! Through these drives, Sampriyata's continues to spread happiness and care among the elderly, fostering a sense of togetherness and love in every interaction. In summary, the outcomes of Sampriyata endeavors have been incredibly fulfilling. The elderly residents conveyed their happiness and appreciation for the companionship and enjoyable activities we provided. Their enthusiastic feedback and longing for our return stand as a testament to the meaningful bonds we have built. Their joy fuels our motivation, and we eagerly anticipate future visits, persistently spreading happiness and making a positive impact in their lives.",
         image_src: blog_1,
     },
 
     {
+        id: 9,
         title: 'Embracing Elders: Spreading Smiles, Sharing Stories',
         content: "Drive in the month of May At Rojavanam Old Age Home, Saket, we shared moments of joy with the elderly through dance and music performances by our unit members. Engaging games like 'guess the movie' were played, and the seniors thoroughly enjoyed it, evident from their reactions and smiles. We also offered thoughtful gifts of bananas, buttermilk, and biscuits, which brought happiness to the residents. Drive in the month of June We organized a donation drive at Human Peace Foundation, Nirman Vihar, providing essential items like biscuits, hand towels, and sandos to support the well-being of the residents. The smiles on their faces while receiving the gifts were priceless! Through these drives, Sampriyata's continues to spread happiness and care among the elderly, fostering a sense of togetherness and love in every interaction. In summary, the outcomes of Sampriyata endeavors have been incredibly fulfilling. The elderly residents conveyed their happiness and appreciation for the companionship and enjoyable activities we provided. Their enthusiastic feedback and longing for our return stand as a testament to the meaningful bonds we have built. Their joy fuels our motivation, and we eagerly anticipate future visits, persistently spreading happiness and making a positive impact in their lives.",
         image_src: blog_1,
@@ -304,7 +313,105 @@ const InitiativeData = [
         title: 'Member 2',
         paragraph: 'Position 2',
     },
-    
-];
 
-export { nav_data, blog_data, event_data, NGO_about_mission_vision, testimonialData, Cardsdata, InitiativeData };
+];
+const Ourcabinet=[
+    {
+        name:"Swarnim Anand",
+        role:"ZHDC Unit Head",
+        imageSrc:"/images/swarnim.jpg",
+        insta:"",
+        linkedin:"",
+        email:""
+    },
+    {
+        name:"Hunnar Kaushal",
+        role:"JMC Unit Head",
+        imageSrc:"/images/hunnar.jpg",
+        insta:"",
+        linkedin:"",
+        email:""
+    },
+    {
+        name:"Tanishk Taluja",
+        role:"MLNC Unit Head",
+        imageSrc:"/images/tanishq.jpg",
+        insta:"",
+        linkedin:"",
+        email:""
+    },
+    {
+        name:"Priyanka Thawani",
+        role:"SPM Unit Head",
+        imageSrc:"/images/priyanka.jpg",
+        insta:"",
+        linkedin:"",
+        email:""
+    },
+    {
+        name:"Abdul Ghani",
+        role:"SRCC Unit Head",
+        imageSrc:"/images/abdul.jpg",
+        insta:"",
+        linkedin:"",
+        email:""
+    },
+    {
+        name:"Snehal Gupta",
+        role:"MH Unit Head",
+        imageSrc:"/images/sneha.jpg",
+        insta:"",
+        linkedin:"",
+        email:""
+    },
+    {
+        name:"Keshav Goel",
+        role:"RAMJAS Unit Head",
+        imageSrc:"/images/keshav.jpg",
+        insta:"",
+        linkedin:"",
+        email:""
+    },
+    {
+        name:"Jaya",
+        role:"MAITREYI Unit Head",
+        imageSrc:"/images/jaya.jpg",
+        insta:"",
+        linkedin:"",
+        email:""
+    },
+    {
+        name:"Divya",
+        role:"IPWC Unit Head",
+        imageSrc:"/images/divya.jpg",
+        insta:"",
+        linkedin:"",
+        email:""
+    },
+    {
+        name:"Anshika Singh",
+        role:"SATYAWATI Unit Head",
+        imageSrc:"/images/anshika.jpg",
+        insta:"",
+        linkedin:"",
+        email:""
+    },
+    {
+        name:"Jasleen Kaur",
+        role:"SGTBKC Unit Head",
+        imageSrc:"/images/jasleen.jpg",
+        insta:"",
+        linkedin:"",
+        email:""
+    },
+    {
+        name:"Nabilah Qureshi",
+        role:"DRC Unit Head",
+        imageSrc:"/images/nabilah.jpg",
+        insta:"",
+        linkedin:"",
+        email:""
+    },
+]
+
+export { nav_data, blog_data, event_data, NGO_about_mission_vision, testimonialData, Cardsdata, InitiativeData,Ourcabinet };

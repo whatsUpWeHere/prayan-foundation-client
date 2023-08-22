@@ -1,9 +1,10 @@
 import React from "react";
-import BlogCard from "./BlogCard";
+import BlogCard from "./cards/BlogCard";
 import { blog_data } from "@/constants";
 import BlogPagination from "./BlogPagination";
 
 const Blog = () => {
+    const counter = 0;
     return (
         <>
             <div className=" flex items-center justify-center flex-col mx-auto">
@@ -13,8 +14,8 @@ const Blog = () => {
                 </p>
             </div>
             <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-10 gap-5">
-                {blog_data.map((blog)=>(
-                    <BlogCard key={blog.id} {...blog} />
+                {blog_data.map((blog, index)=>(
+                    <BlogCard key={counter++} {...blog} />
                 ))}
             </section>
             <div className="pagination">

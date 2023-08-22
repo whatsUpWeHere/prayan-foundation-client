@@ -4,7 +4,7 @@ import Image from "next/image";
 import { logo } from "@/assets";
 import Link from "next/link";
 import { nav_data } from "@/constants";
-import UserProfileCard from "./UserProfileCard";
+import UserProfileCard from "./cards/UserProfileCard";
 
 import {
     UserButton,
