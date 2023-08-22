@@ -27,6 +27,10 @@ const nav_data = [
         name: 'Contact',
         path: '/contact'
     },
+    {
+        name: 'Donate',
+        path: '/donate'
+    },
 
 ]
 

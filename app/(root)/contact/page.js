@@ -1,12 +1,12 @@
 import React from "react";
-import AboutLink from "@/components/nav-link-components/AboutLink";
+import ContactLink from "@/components/nav-link-components/ContactLink";
 import TopBGImage from "@/components/TopBGImage";
 
 const contact = () => {
     return (
         <>
             <TopBGImage text="Contact Us"/>
-            <AboutLink />
+            <ContactLink />
         </>
     );
 };
