@@ -4,7 +4,7 @@ import { blog_data } from "@/constants";
 import BlogPagination from "./BlogPagination";
 
 const Blog = () => {
-    const counter = 0;
+    let counter = 0;
     return (
         <>
             <div className=" flex items-center justify-center flex-col mx-auto">

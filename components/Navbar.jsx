@@ -61,7 +61,7 @@ const Navbar = () => {
                     </div>
                     <div className="hidden md:block">
                         <nav aria-label="Global">
-                            <ul className="flex items-center gap-6 text-sm ">
+                            <ul className="flex items-center justify-start gap-6 text-sm ">
                                 {nav_data.map((item, index) => {
                                     return (
                                         <li
