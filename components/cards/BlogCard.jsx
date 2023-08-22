@@ -9,8 +9,8 @@ const BlogCard = ({title, content, image_src}) => {
       <Image
         alt="blog_image"
         src={image_src}
-        width={56}
-        height={56}
+        width={320}
+        height={240}
         className="h-56 w-full object-cover"
       />
       <div className="p-4 sm:p-6">

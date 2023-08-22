@@ -1,15 +1,15 @@
-'use client'
+// 'use client'
 import React from "react";
-import { useUser, SignedIn, SignInButton } from "@clerk/nextjs";
+import { currentUser, SignedIn, SignInButton } from "@clerk/nextjs";
 // importing redirect
 import { redirect } from "next/navigation";
 import EventForm from "@/components/forms/EventForm";
 
-const page = () => {
-    const { isLoaded, isSignedIn, user } = useUser();
+const page = async () => {
+    const { isLoaded, isSignedIn, user } = await currentUser();
 
     if (!isSignedIn) {
-        return redirect("/sign0-in");
+        return redirect("/sign-in");
     }
 
     if (user?.unsafeMetadata.role !== "admin") {

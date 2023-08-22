@@ -11,8 +11,8 @@ function TestimonialSection() {
       <Container>
         <div className=" flex items-center justify-center flex-col mx-auto pt-13">
           <h3 className="font-bold text-2xl text-[#fdbe33]">  Testimonial</h3>
-          <p className="text-[#4A4C70] text-5xl text-center letter-wider font-semibold px-13 py-7 ">
-            What people are talking about our Drives <span className='block p-2'>Foundation</span>
+          <p className="text-[#4A4C70] text-4xl text-center letter-wider font-semibold px-13 py-7 border border-red-500">
+            What people are talking about our Drives 
           </p>
         </div>
 

@@ -57,9 +57,11 @@ const EventForm = () => {
                     venue: "",
                 });
                 alert("Event Created Successfully");
+                return ;
             }
         } catch (error) {
             console.log("some error creating event... ", error);
+            alert("some error creating event... ");
         }
     };
 

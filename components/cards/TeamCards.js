@@ -28,7 +28,7 @@ function Cards() {
 
             >
               <div
-                className={`card relative shadow-lg overflow-hidden m-2 flex gap-2 justify-center flex-col items-center`}
+                className={`card relative shadow-lg overflow-hidden m-2 flex gap-2 justify-center flex-col items-center mx-auto`}
                 style={{ width: '16rem' }}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}

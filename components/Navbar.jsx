@@ -61,7 +61,7 @@ const Navbar = () => {
                     </div>
                     <div className="hidden md:block">
                         <nav aria-label="Global">
-                            <ul className="flex items-center justify-start gap-6 text-sm ">
+                            <ul className="flex items-center gap-6 text-sm ">
                                 {nav_data.map((item, index) => {
                                     return (
                                         <li
@@ -162,7 +162,7 @@ const Navbar = () => {
                     absolute top-[3.5rem] right-[.25rem] w-[50%] flex flex-col text-2xl items-start justify-center p-4 `}
                                 id="user-dropdown"
                             >
-                                <div className="px-4 py-3">
+                                <div className="md:px-4 py-3">
                                     <span className="block  text-white font-semibold">
                                         Prayan NGO
                                     </span>
@@ -179,7 +179,7 @@ const Navbar = () => {
                                             <li key={index}>
                                                 <Link
                                                     href={item.path}
-                                                    className={`block px-4 py-2 ${
+                                                    className={`block md:px-4 py-2 ${
                                                         active == item.name
                                                             ? "text-white border-2 border-teal-600"
                                                             : "text-gray-200"

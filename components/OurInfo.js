@@ -22,7 +22,7 @@ const OurInfo = () => {
             </Col>
             <Col md={8}>
                 <div className=" flex items-start justify-center flex-col mx-auto pt-13">
-                    <h3 className=" text-2xl text-[#fdbe33]">
+                    <h3 className="mx-auto text-2xl text-[#fdbe33]">
                         Learn About Us</h3>
                     <p className="text-[#4A4C70] text-5xl text-center letter-wider font-semibold  py-7 ">
                         Prayan Foundation

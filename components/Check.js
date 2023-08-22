@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 // import './initiative-box.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
+import Image from 'next/image';
 
 const Check = ({ InitiativeData }) => {
     const [expandedStates, setExpandedStates] = useState(
@@ -21,7 +22,7 @@ const Check = ({ InitiativeData }) => {
                     <Col lg={3} md={4} sm={6} xs={12} className="p-2" key={index}>
                         <div className="causes-item bg-white border border-gray-300 rounded-lg shadow-lg p-6">
                             <div className="causes-img" id="initiative-img">
-                                <img src={card.imageSrc} alt="Image" className="w-full h-auto" />
+                                <Image src={card.imageSrc} alt="Image" width={100} height={100} className="w-full h-auto" />
                             </div>
                             <div
                                 className={`causes-text mt-4 ${expandedStates[index] ? 'expanded' : ''
@@ -33,7 +34,7 @@ const Check = ({ InitiativeData }) => {
                                     className={`mt-2 text-gray-600 ${expandedStates[index] ? 'expanded' : ''
                                         }`}
                                 >
-                                    {card.paragraph}
+                                    {card.description}
                                 </p>
                             </div>
                             <div className="causes-btn mt-4 border-2 flex justify-center items-center border-red-500 mx-auto" id="footer-in">
@@ -61,6 +62,7 @@ const Check = ({ InitiativeData }) => {
                     </Col>
                 ))}
             </Row>
+
         </Container>
     );
 };
