@@ -293,47 +293,47 @@ const Cardsdata = [
 
 const InitiativeData = [
     {
-        imageSrc:"",
+        imageSrc:"/images/karuna.jpg",
         title:"Initiative Karuna",
         description:"'karuna', in Sanskrit means 'Compassion'. Founded on the principles of empathy, and understanding, Initiative Karuna embodies a resolute commitment to improving the lives of animals both great and small. In the spirit of compassion in action, the SGTBK Unit , undertakes direct initiatives to improve the lives of animals. From rescue and rehabilitation to providing shelter and medical care, the organization's dedicated volunteers work on the front lines to alleviate suffering and restore hope. Through their unwavering commitment, they exemplify the transformative power of empathy and kindness. In a world often preoccupied with its own affairs, Initiative Karuna reminds us of our shared responsibility towards all living creatures. They remind us that compassion transcends species barriers and that each of us can make a positive difference, no matter how small and that compassion is a powerful force that can truly change the world, one paw, hoof, or wing at a time.",
     },
     {
-        imageSrc:"",
+        imageSrc:"/images/sahyog/.jpg",
         title:"Initiative Sahyog",
         description:"'Sahyog' itself translates to 'support' in Hindi, which embodies the core mission of the initiative. Sahyog firmly believes that every individual, regardless of their abilities, deserves equal rights and opportunities to lead a fulfilling life. With this belief at the heart of their work, the initiative strives to empower and create an inclusive society for people with disabilities. Sahyog also seeks to create awareness and advocate for the rights of the disabled community by organizing campaigns, workshops, and training sessions. Sahyog's ultimate vision is to create an inclusive society where people with disabilities are empowered, respected, and provided with equal opportunities to lead independent and meaningful lives. Through their relentless efforts, SPM Unit who has initiated 'Sahyog' aspires to be a beacon of hope and support for the disabled community, striving towards a future where disabilities are not seen as limitations but as mere variations of humanity.",
     },
     {
-        imageSrc:"",
+        imageSrc:"/images/samadhan.jpg",
         title:"Initiative Samadhan",
         description:"The initiative Samadhan aims at creating a nurturing environment where individuals can seek solace, support & healing with a commitment to break the stigma surrounding mental health issues . One of the most significant hurdles in addressing mental health issues is the stigma attached to seeking help. Initiative Samadhan is dedicated to erasing this stigma by fostering an inclusive and compassionate community. By promoting conversations around mental health in schools, workplaces, and local communities, they are encouraging everyone to play a part in creating a society that prioritizes mental well-being. In a world where mental well-being is often overshadowed, the MLNC Unit emerges as a guiding light, advocating for the significance of addressing mental health concerns just as earnestly as physical health. Their unwavering dedication to nurturing minds and transforming lives sets them apart as a true force for positive change in the field of mental health",
     },
     {
-        imageSrc:"",
+        imageSrc:"/images/samatva.jpg",
         title:"Initiative Samatva",
         description:"Initiative Samatva aims to empower individuals with essential financial knowledge and skills enabling them to make informed decisions about budgeting, saving, and investing. Recognizing that every community has unique needs and challenges, the SVC Unit customizes its programs to address the specific financial concerns of each area. They ensure that participants receive guidance that is relevant and applicable to their circumstances. Samatva's mission is rooted in the belief that everyone, regardless of their background or socioeconomic status, deserves access to fundamental financial education. By promoting sound financial practices, the initiative strives to break the cycle of poverty, promote economic stability, and pave the way for a more prosperous tomorrow.",
     },
     {
-        imageSrc:"",
+        imageSrc:"/images/sukriti.jpg",
         title:"Initiative Sukriti",
-        description:"Sukriti means the benevolence and that’s what this initiative’s approach is towards the social and mental development of children. This initiative aims at fostering smooth development of children with its prime focus on the social and mental well-being of the children with special emphasis over the emotional prosperousness as mental health assumes a prime aspect of an overall well-being of a human in today’s time. The Prayan ZHDC & IPCW came together to begin with small acts of kindness which can make a big change in the society by nurturing young minds and averting them from indulging in inhumane acts and acts of societal harm. The motto of Initiative Sukriti is to channelize the young minds full of passion, grit and freshness in direction of nation building in a way to ensure creation of sustainable future for all",
+        description:"Sukriti means the benevolence and that's what this initiative’s approach is towards the social and mental development of children. This initiative aims at fostering smooth development of children with its prime focus on the social and mental well-being of the children with special emphasis over the emotional prosperousness as mental health assumes a prime aspect of an overall well-being of a human in today’s time. The Prayan ZHDC & IPCW came together to begin with small acts of kindness which can make a big change in the society by nurturing young minds and averting them from indulging in inhumane acts and acts of societal harm. The motto of Initiative Sukriti is to channelize the young minds full of passion, grit and freshness in direction of nation building in a way to ensure creation of sustainable future for all",
     },
     {
-        imageSrc:"",
+        imageSrc:"/images/svakarman.jpg",
         title:"Initiative Svakarman",
         description:"'svakarman' which means 'self-employment' in Sanskrit, aims at empowering individuals and communities by equipping them with essential resources, knowledge & guidance to create their own pathways to success. The DRC & SRCC Unit believes that every individual possesses unique talents and skills, which, when nurtured and harnessed, can lead to meaningful employment and financial independence. The initiative, recognizes that employment is not merely a source of income, but a means to cultivate skills, enhance personal development, and contribute to the overall growth of society. By fostering a culture of entrepreneurship, skill-building, and job creation, Initiative Svakarman aims to create a sustainable ecosystem that uplifts both individuals and the economy. The Initiative Svakarman is not just about job placement; it's about transforming lives and communities. By enabling individuals to secure dignified employment, the initiative contributes to poverty alleviation, social inclusion, and economic development.",
     },
     {
-        imageSrc:"",
+        imageSrc:"/images/avyanna.jpg",
         title:"Initiative Avyanna",
         description:"Initiate Avyanna is a transformative endeavor aimed at empowering women across various walks of life. It's a movement that strives to create a world where every woman has the opportunity to reach her full potential, unburdened by societal limitations or prejudices. Women who were once confined by societal norms have broken free from those chains, becoming entrepreneurs, leaders, and change-makers. From skills development workshops to mentorship programs, the unit tailors its efforts to address the unique challenges faced by women in various contexts. The Satyawati & Maitreyi Unit, don't just impart skills; it ignites a fire within these women, inspiring them to believe in their capabilities and pursue their dreams with unwavering determination.",
     },
     {
-        imageSrc:"",
+        imageSrc:"/images/sampriyata,jpg",
         title:"Initiative Sampriyata",
         description:"'To provide care for the people who once cared for us is one of life’s greatest honors.' is what lies at the heart of Initiative Sampriyata. Through our Ramjas & JMC Unit, we strive to give the elderly little joys of life, where they can thrive and feel valued. We provide essential medical care, nutritious meals, and engaging activities to keep them physically and mentally active. Our team of dedicated members ensures that the elderly receive compassionate care and emotional support. We believe in empowering them to lead a fulfilling life and be an active part of society.",
     },
     {
-        imageSrc:"",
+        imageSrc:"/images/sambhav.jpg",
         title:"Initiative Samhav",
         description:"'Sambhav' signifies the importance of the possibility in the world full of uncertainties. This initiative emphasizes that in the times where disparities are common, education should be provided to all. Providing basic yet quality education to children is the main agenda under this with primarily targeting the under privileged sections of society. This initiative run by MH & ARSD Unit will be a great leap in the lives of the children who need assistance as the structure of our initiative will help them not just dream big but also help them carve their way upto it. This initiative is a step that will turn the possibility of creation of an ideal nation become the undeniable reality of every citizen witnessing it.",
     },
