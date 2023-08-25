@@ -4,7 +4,7 @@ import { useUser } from "@clerk/nextjs";
 
 const EventForm = () => {
     // const backend_url = "https://ngo-site-backend.onrender.com";
-    const backend_url = "http://localhost:5000";
+    const backend_url = process.env.NEXT_PUBLIC_BACKEND_URL;
     const { user } = useUser();
 
     const [event, setEvent] = useState({
@@ -44,11 +44,11 @@ const EventForm = () => {
                     body: JSON.stringify(event),
                 }
             );
-            console.log("well");
             const eventObject = await response.json();
-            console.log("database response: ", eventObject);
+            console.log("database response: ", response);
+            console.log("event object response: ", eventObject);
 
-            if (eventObject.status === "200") {
+            if ( response.status === 201) {
                 setEvent({
                     heading: "",
                     content: "",
@@ -57,6 +57,7 @@ const EventForm = () => {
                     venue: "",
                 });
                 alert("Event Created Successfully");
+                console.log("Event Created Successfully")
                 return ;
             }
         } catch (error) {

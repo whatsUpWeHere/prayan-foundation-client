@@ -58,77 +58,85 @@ const Footer = () => {
                         <div className="mt-8 grid grid-cols-2 gap-8 sm:grid-cols-3 place-items-center	">
                             <div>
                                 <p className="font-medium text-[#FDBE33]">
-                                    Services
+                                    Navigation Links
                                 </p>
                                 <ul className="mt-6 space-y-4 text-sm">
                                     <li>
                                         <Link
-                                            href="#"
+                                            href="/about"
                                             className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                                         >
-                                            Accounts Review
+                                            about us
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
-                                            href="#"
+                                            href="/our-units"
                                             className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                                         >
-                                            HR Consulting
+                                            Our Units
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
-                                            href="#"
+                                            href="/events"
                                             className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                                         >
-                                            SEO Optimisation
+                                            Events
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            href="/blog"
+                                            className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                                        >
+                                            Our Blog
                                         </Link>
                                     </li>
                                 </ul>
                             </div>
                             <div>
                                 <p className="font-medium text-[#FDBE33]">
-                                    Company
+                                    Quick Links
                                 </p>
                                 <ul className="mt-6 space-y-4 text-sm">
                                     <li>
                                         <Link
-                                            href="#"
+                                            href="/donate"
                                             className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                                         >
-                                            About
+                                            Donate Us
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
-                                            href="#"
-                                            className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                                        >
-                                            Meet the Team
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="#"
-                                            className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                                        >
-                                            Accounts Review
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <p className="font-medium text-[#FDBE33]">
-                                    Helpful Links
-                                </p>
-                                <ul className="mt-6 space-y-4 text-sm">
-                                    <li>
-                                        <Link
-                                            href="#"
+                                            href="/contact"
                                             className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                                         >
                                             Contact
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            href="/dashboard"
+                                            className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                                        >
+                                            Admin Dashboard
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p className="font-medium text-[#FDBE33]">
+                                    People behind prayan
+                                </p>
+                                <ul className="mt-6 space-y-4 text-sm">
+                                    <li>
+                                        <Link
+                                            href="/about/developers"
+                                            className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                                        >
+                                            developers
                                         </Link>
                                     </li>
                                     <li>

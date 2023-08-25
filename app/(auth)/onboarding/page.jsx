@@ -6,7 +6,8 @@ import { clerkClient } from "@clerk/nextjs";
 
 const page = async () => {
     // const backend_url = "https://ngo-site-backend.onrender.com";
-    const backend_url = "http://localhost:5000";
+    // const backend_url = "http://localhost:5000";
+    const backend_url = process.env.NEXT_PUBLIC_BACKEND_URL;
     const user = await currentUser();
     if (!user) return null;
     const { emailAddresses, firstName, lastName, id, profileImageUrl } = user;

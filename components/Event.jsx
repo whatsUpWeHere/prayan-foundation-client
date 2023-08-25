@@ -1,16 +1,15 @@
-'use client'
+"use client";
 import React, { useEffect, useState } from "react";
 import EventCard from "./EventCard";
 
-const Blog = () => {
+const Events = () => {
     const [eventData, setEventData] = useState([]);
-
-   
+    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
 
     const fetchEvents = async () => {
         try {
             const response = await fetch(
-                "http://localhost:5000/api/event/fetchAllEvents"
+                backendUrl + "/api/event/fetchAllEvents"
             );
             const data = await response.json();
             console.log("events are ", data.events);
@@ -25,7 +24,8 @@ const Blog = () => {
     }, []);
 
     return (
-        <>
+        <div className="">
+    
             <div className=" flex items-center justify-center flex-col mx-auto">
                 <h3 className="font-bold text-xl text-[#fdbe33]">
                     Upcoming Events
@@ -34,13 +34,13 @@ const Blog = () => {
                     Be ready for our upcoming drives
                 </p>
             </div>
-            <section className="grid grid-cols-1 md:grid-cols-2  my-10 gap-5">
+            <section className="grid grid-cols-1 md:grid-cols-3  my-10 gap-5">
                 {eventData.map((event) => (
                     <EventCard key={event._id} {...event} />
                 ))}
             </section>
-        </>
+        </div>
     );
 };
 
-export default Blog;
+export default Events;

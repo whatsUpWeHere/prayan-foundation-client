@@ -88,7 +88,7 @@ const Navbar = () => {
                             </ul>
                         </nav>
                     </div>
-                    <div className="flex items-center gap-4">
+                    <section className="flex items-center gap-4">
                         {user ? (
                             <UserProfileCard />
                         ) : (
@@ -197,7 +197,7 @@ const Navbar = () => {
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </div>
         </header>

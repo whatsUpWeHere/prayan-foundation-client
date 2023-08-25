@@ -5,6 +5,7 @@ import SectionWrapper from "@/hoc/SectionWrapper";
 const EventsLink = () => {
     return (
         <>
+            
             <Event />
         </>
     );

@@ -3,11 +3,14 @@
 import TopBGImage from '@/components/TopBGImage';
 import HomeLink from '@/components/nav-link-components/HomeLink';
 
-function Home() {
 
+
+function Home() {
+  console.log(process.env.NEXT_PUBLIC_BACKEND_URL)
   return (
     <>
-      <TopBGImage  text="Prayan Foundation"/>
+
+      <TopBGImage text="Prayan Foundation" />
       <HomeLink />
     </>
   )
