@@ -19,7 +19,7 @@ const page = () => {
       {/* justify-center items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 m-5 */}
       <section className="flex justify-center items-center mx-auto m-5 flex-wrap w-full md:w-[75vw]">
         {developers_data.map((card, index) => (
-          <DeveloperProfileCard card={card} id={index} />
+          <DeveloperProfileCard card={card} key={index} />
         ))}
       </section>
     </section>

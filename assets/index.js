@@ -30,6 +30,7 @@ import testimonial4 from './img/testimonial-4.jpg';
 // import facts from './img/facts.png';
 import facts from './img/facts.jpg'
 
-// import QrCode from './imgQrCode.jpg'
+import QRCode from './QRCode.jpg'
+import QRCode2 from './QRCode2.jpg'
 
-export { logo, contact, blog_1, event_1,  team1, team2, team3, team4, team5, team6, team7, team8, team9, team10, team11,team12, parthdubey, devanshi,  akansha, testimonial1, testimonial2, testimonial3, testimonial4, facts,   prakash_rawat, };
+export { logo, contact, blog_1, event_1,  team1, team2, team3, team4, team5, team6, team7, team8, team9, team10, team11,team12, parthdubey, devanshi,  akansha, testimonial1, testimonial2, testimonial3, testimonial4, facts,   prakash_rawat, QRCode2};

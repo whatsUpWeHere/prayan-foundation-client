@@ -4,7 +4,7 @@ import TestimonialSection from "@/components/TestimonialSection";
 import ParallaxComponent from "@/components/ParallaxComponent";
 import OurInfo from "@/components/OurInfo";
 import SectionWrapper from "@/hoc/SectionWrapper";
-import Check from "@/components/Check";
+import Ourproject from "../forms/OurProject";
 import OurIni from "@/components/crousel/CardSet1";
 
 function Home() {
@@ -15,7 +15,7 @@ function Home() {
             <OurIni/>
             <TestimonialSection />
             <Event />
-            <Check />
+            <Ourproject />
         </>
     );
 }

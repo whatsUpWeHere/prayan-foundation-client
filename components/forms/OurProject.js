@@ -3,11 +3,11 @@ import './initiative-box.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import Image from 'next/image';
-import { InitiativeData } from '@/constants';
+import { Ourprojects } from '@/constants';
 
-const Check = () => {
+const Ourproject = () => {
     const [expandedStates, setExpandedStates] = useState(
-        InitiativeData.map(() => false) // Initialize all cards as not expanded
+        Ourprojects.map(() => false) // Initialize all cards as not expanded
     );
 
     const handleButtonClick = (index) => {
@@ -25,7 +25,7 @@ const Check = () => {
                 </p>
             </div>
             <Row>
-                {InitiativeData.map((card, index) => (
+                {Ourprojects.map((card, index) => (
                     <Col lg={3} md={4} sm={6} xs={12} className="p-2" key={index}>
                         <div className="causes-item bg-white border  rounded-lg shadow-lg p-6">
                             <div className="causes-img" id="initiative-img">
@@ -41,7 +41,7 @@ const Check = () => {
                                     className={`mt-2 text-gray-600 ${expandedStates[index] ? 'expanded' : ''
                                         }`}
                                 >
-                                    {card.description}
+                                    {card.content}
                                 </p>
                             </div>
                             <div className="causes-btn mt-4 border-2 flex justify-center items-center  mx-auto" id="footer-in">
@@ -74,4 +74,4 @@ const Check = () => {
     );
 };
 
-export default Check;
+export default Ourproject;
