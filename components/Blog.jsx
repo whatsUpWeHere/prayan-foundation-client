@@ -13,7 +13,7 @@ const Blog = () => {
                     Latest news & articles directly from our Newsletter
                 </p>
             </div>
-            <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-10 gap-5">
+            <section className="mx-auto w-screen lg:w-[80vw] px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-10 gap-2">
                 {blog_data.map((blog, index)=>(
                     <BlogCard key={counter++} {...blog} />
                 ))}

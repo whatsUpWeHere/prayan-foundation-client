@@ -15,9 +15,13 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={`${inter.className} bg-[#F3F4F6]`}>
+        <body className={`${inter.className} bg-[#F3F4F6] `}>
           <Navbar />
-          {children}
+
+          <div className='min-h-screen'>
+            {children}
+          </div>
+          
           <Footer />
         </body>
 

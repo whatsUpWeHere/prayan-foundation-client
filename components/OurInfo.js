@@ -7,8 +7,8 @@ import Tabs from 'react-bootstrap/Tabs';
 import { NGO_about_mission_vision } from '@/constants';
 
 const OurInfo = () => {
-    return <>
-        <Row className=''>
+    return <div>
+        <Row className=" m-5 md:m-10">
             <Col md={4} className='py-7 h-[90%] overflow-hidden border border-red-500' >
                 <Image
                     
@@ -24,7 +24,7 @@ const OurInfo = () => {
                 <div className=" flex items-start justify-center flex-col mx-auto pt-13">
                     <h3 className="mx-auto text-2xl text-[#fdbe33]">
                         Learn About Us</h3>
-                    <p className="text-[#4A4C70] text-5xl text-center letter-wider font-semibold  py-7 ">
+                    <p className="text-[#4A4C70] text-5xl text-center letter-wider font-semibold  py-7 mx-auto">
                         Prayan Foundation
                     </p>
                 </div>
@@ -35,7 +35,7 @@ const OurInfo = () => {
                     fill
                 >
                     {NGO_about_mission_vision.map((item, index) =>
-                    (<Tab eventKey={item.eventKey} title={item.title} key={index} className='text-justify'>
+                    (<Tab eventKey={item.eventKey} title={item.title} key={index} className='text-justify  mt-0'>
                         {item.content}
                     </Tab>)
                     )}
@@ -44,7 +44,7 @@ const OurInfo = () => {
                 </Tabs>
             </Col>
         </Row>
-    </>
+    </div>
 };
 
 export default OurInfo;

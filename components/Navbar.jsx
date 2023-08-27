@@ -73,7 +73,7 @@ const Navbar = () => {
                                             }`}
                                         >
                                             <Link
-                                                className={` font-bold transition hover:text-gray-500/75 `}
+                                                className={` font-bold text-gray-400 transition border-none hover:text-gray-500 `}
                                                 href={item.path}
                                                 onClick={() => {
                                                     setActive(item.name);

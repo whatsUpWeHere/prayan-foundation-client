@@ -20,22 +20,7 @@ const Dashboard = () => {
                 >
                     Events
                 </div>
-                <div
-                    onClick={() => handleTabClick(1)}
-                    className={`p-2 cursor-pointer text-sm ${
-                        activeTab === 1 ? "bg-gray-300" : "bg-gray-100"
-                    }`}
-                >
-                    Placeholder 1
-                </div>
-                <div
-                    onClick={() => handleTabClick(2)}
-                    className={`p-2 cursor-pointer text-sm ${
-                        activeTab === 2 ? "bg-gray-300" : "bg-gray-100"
-                    }`}
-                >
-                    Placeholder 2
-                </div>
+                
             </div>
             <div className="flex-1 border  border-red-500 p-4">
                 {activeTab === 0 && (

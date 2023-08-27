@@ -1,8 +1,9 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import EventCard from "./EventCard";
+import SectionWrapper from "@/hoc/SectionWrapper";
 
-const Events = () => {
+const Event = () => {
     const [eventData, setEventData] = useState([]);
     const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
 
@@ -24,7 +25,7 @@ const Events = () => {
     }, []);
 
     return (
-        <div className="">
+        <div className="mx-auto px-5">
     
             <div className=" flex items-center justify-center flex-col mx-auto">
                 <h3 className="font-bold text-xl text-[#fdbe33]">
@@ -34,7 +35,8 @@ const Events = () => {
                     Be ready for our upcoming drives
                 </p>
             </div>
-            <section className="grid grid-cols-1 md:grid-cols-3  my-10 gap-5">
+            {/* grid grid-cols-1 md:grid-cols-2 */}
+            <section className=" flex flex-wrap my-10 gap-5 justify-center items-center mx-auto">
                 {eventData.map((event) => (
                     <EventCard key={event._id} {...event} />
                 ))}
@@ -43,4 +45,4 @@ const Events = () => {
     );
 };
 
-export default Events;
+export default SectionWrapper(Event);

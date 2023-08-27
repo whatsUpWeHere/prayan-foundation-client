@@ -1,0 +1,10 @@
+.bg-glass {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    backdrop-filter: saturate(500%) blur(30%);
+    opacity: 85%;
+}
+
+#data-div {
+    text-align: center;
+    justify-content: center;
+}

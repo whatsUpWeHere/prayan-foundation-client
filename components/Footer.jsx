@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer className="bg-[#20212B] text-white">
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-                <div className="lg:grid lg:grid-cols-2">
+                <div className="grid md:grid-cols-2 grid-cols-1">
                     <div className="border-b border-gray-100 py-8 dark:border-gray-800 lg:order-last lg:border-b-0 lg:border-s lg:py-16 lg:ps-16">
                         <div className="block text-teal-600 dark:text-teal-300 "></div>
                         <div className="mt-8 space-y-4 lg:mt-0">
@@ -43,7 +43,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="py-8 lg:py-16 lg:pe-16 ">
-                        <div className="text-teal-300  justify-start items-center ml-11 ">
+                        <div className="flex text-teal-300  justify-start items-center ml-11 ">
                             <Image
                                 src={logo}
                                 alt="logo"
@@ -54,8 +54,8 @@ const Footer = () => {
                                 Prayan NGO
                             </div>
                         </div>
-
-                        <div className="mt-8 grid grid-cols-2 gap-8 sm:grid-cols-3 place-items-center	">
+                        {/* mt-8 grid grid-cols-2 gap-8 sm:grid-cols-3 place-items-center	 */}
+                        <div className=" flex justify-center items-center gap-5 md:gap-10 mx-auto mt-5">
                             <div>
                                 <p className="font-medium text-[#FDBE33]">
                                     Navigation Links
@@ -124,6 +124,7 @@ const Footer = () => {
                                             Admin Dashboard
                                         </Link>
                                     </li>
+                                    <li>&nbsp;</li>
                                 </ul>
                             </div>
                             <div>
@@ -155,6 +156,7 @@ const Footer = () => {
                                             Live Chat
                                         </Link>
                                     </li>
+                                    <li>&nbsp;</li>
                                 </ul>
                             </div>
                         </div>
@@ -186,7 +188,7 @@ const Footer = () => {
                                 </li>
                             </ul>
                             <p className="mt-8 text-xs text-gray-500 dark:text-gray-400">
-                                © 2022. Company Name. All rights reserved.
+                                © 2023. Prayan Foundation. All rights reserved.
                             </p>
                         </div>
                     </div>

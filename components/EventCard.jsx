@@ -2,12 +2,14 @@ import React from "react";
 import { event_1 } from "@/assets";
 import Image from "next/image";
 import Link from "next/link";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faCalendarDays,
     faClock,
     faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
+
 
 const EventCard = ({ content, date, heading, time, venue }) => {
 
@@ -20,7 +22,7 @@ const EventCard = ({ content, date, heading, time, venue }) => {
         return `${day}-${month}-${year}`;
     };
     return (
-        <div className="event-item bg-blue-100 mb-6 p-4">
+        <div className="event-item bg-blue-100  mb-6 p-4 max-w-[400px] shadow-lg">
             <Image src={event_1} alt="Image" className="w-full"></Image>
             <div className="event-content py-6 pl-2 flex-col">
                 <div className="event-meta shadow-sm flex flex-col items-start justify-center  py-1">

@@ -1,9 +1,9 @@
-const SectionWrapper = (Component, idName) => {
+const SectionWrapper = (Component) => {
     function HOC() {
         return (
              
-            <section className="sm:px-[6.5rem] px-[1.30rem] sm:py-16 py-10 max-w-7xl mx-auto relative z-0">
-                <span className="hash-span" id={idName}>
+            <section className="sm:px-[12rem] px-[2rem] sm:py-16 py-10  mx-auto relative z-0">
+                <span className="hash-span" >
                     &nbsp;
                 </span>
                 <Component />

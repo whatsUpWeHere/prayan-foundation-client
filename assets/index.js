@@ -20,6 +20,8 @@ import parthdubey from './img/parthdubey.jpg';
 import devanshi from './img/devanshi.png';
 import akansha from './img/akansha.jpg';
 
+import prakash_rawat from './prakash_rawat.jpg';
+
 import testimonial1 from './img/testimonial-1.jpg';
 import testimonial2 from './img/testimonial-2.jpg';
 import testimonial3 from './img/testimonial-3.jpg';
@@ -28,4 +30,6 @@ import testimonial4 from './img/testimonial-4.jpg';
 // import facts from './img/facts.png';
 import facts from './img/facts.jpg'
 
-export { logo, contact, blog_1, event_1,  team1, team2, team3, team4, team5, team6, team7, team8, team9, team10, team11,team12, parthdubey, devanshi,  akansha, testimonial1, testimonial2, testimonial3, testimonial4, facts,  };
+// import QrCode from './imgQrCode.jpg'
+
+export { logo, contact, blog_1, event_1,  team1, team2, team3, team4, team5, team6, team7, team8, team9, team10, team11,team12, parthdubey, devanshi,  akansha, testimonial1, testimonial2, testimonial3, testimonial4, facts,   prakash_rawat, };
