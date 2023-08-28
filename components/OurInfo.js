@@ -9,15 +9,14 @@ import { NGO_about_mission_vision } from '@/constants';
 const OurInfo = () => {
     return <div>
         <Row className=" m-5 md:m-10">
-            <Col md={4} className='py-7 h-[90%] overflow-hidden border border-red-500' >
+            <Col md={4} className='py-7 h-[90%] w-auto  overflow-hidden border border-red-500' >
                 <Image
                     
-                    src={'/images/about.png'}
+                    src='https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/About.png?raw=true'
                     alt="me"
-
                     width={400}
                     height={100}
-                    className='object-contain '
+                    className='object-contain'
                 />
             </Col>
             <Col md={8}>

@@ -10,8 +10,6 @@ function Home() {
   return (
     <>
       <HomeCarousel />
-      <TopBGImage text="Prayan Foundation" />
-      
       <HomeLink />
     </>
   )

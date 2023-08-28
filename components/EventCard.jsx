@@ -1,4 +1,5 @@
-import React from "react";
+'use client'
+import React, {useState} from "react";
 import { event_1 } from "@/assets";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,9 +11,8 @@ import {
     faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 
-
-const EventCard = ({ content, date, heading, time, venue }) => {
-
+const EventCard = ({ content, date, heading, time, venue, image }) => {
+    console.log(content, date, heading, time, venue, image);
 
     const formatDateToLong = (dateString) => {
         const date = new Date(dateString);
@@ -21,9 +21,19 @@ const EventCard = ({ content, date, heading, time, venue }) => {
         const day = date.getDate().toString().padStart(2, "0");
         return `${day}-${month}-${year}`;
     };
+
+   
+
     return (
         <div className="event-item bg-blue-100  mb-6 p-4 max-w-[400px] shadow-lg">
-            <Image src={event_1} alt="Image" className="w-full"></Image>
+            <Image
+               
+                src={image}
+                alt="Image"
+                width={400}
+                height={300}
+                className="w-full"
+            />
             <div className="event-content py-6 pl-2 flex-col">
                 <div className="event-meta shadow-sm flex flex-col items-start justify-center  py-1">
                     <p className="flex items-center mb-2  border  shadow-sm">
@@ -32,7 +42,9 @@ const EventCard = ({ content, date, heading, time, venue }) => {
                             className=" mr-2 border w-[15px]"
                         />
 
-                        <span className="text-sm">{formatDateToLong(date)}</span>
+                        <span className="text-sm">
+                            {formatDateToLong(date)}
+                        </span>
                     </p>
                     <p className="flex items-center  mb-2  border  shadow-sm">
                         <FontAwesomeIcon

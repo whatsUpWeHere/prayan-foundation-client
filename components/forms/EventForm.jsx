@@ -13,6 +13,7 @@ const EventForm = () => {
         date: "",
         time: "",
         venue: "",
+        image: "",
     });
 
     const handleChange = (e) => {
@@ -26,7 +27,7 @@ const EventForm = () => {
 
     const createEventButton = async (e) => {
         e.preventDefault();
-        console.log(event);
+        console.log("event is: ",event);
 
         const userUnsafeMetaData = user?.unsafeMetadata;
         console.log("user: ", user);
@@ -44,6 +45,11 @@ const EventForm = () => {
                     body: JSON.stringify(event),
                 }
             );
+
+            if (response.status === 401) {
+                alert("You are not authorized to create event");
+                return;
+            }
             const eventObject = await response.json();
             console.log("database response: ", response);
             console.log("event object response: ", eventObject);
@@ -55,6 +61,7 @@ const EventForm = () => {
                     date: "",
                     time: "",
                     venue: "",
+                    image: "",
                 });
                 alert("Event Created Successfully");
                 console.log("Event Created Successfully")
@@ -115,14 +122,28 @@ const EventForm = () => {
                     <div>
                         <span className="ml-2">venue</span>
                         <label className="sr-only" htmlFor="venue">
-                            location of event
+                            
                         </label>
                         <input
                             className="w-full rounded-lg border-gray-200 p-3 text-sm shadow-lg"
-                            placeholder="venue"
+                            placeholder="location of event"
                             type="text"
                             name="venue"
                             value={event.venue}
+                            onChange={handleChange}
+                        />
+                    </div>
+                    <div>
+                        <span className="ml-2">Image</span>
+                        <label className="sr-only" htmlFor="image">
+                             
+                        </label>
+                        <input
+                            className="w-full rounded-lg border-gray-200 p-3 text-sm shadow-lg"
+                            placeholder="Enter Image URL"
+                            type="text"
+                            name="image"
+                            value={event.image}
                             onChange={handleChange}
                         />
                     </div>
@@ -135,7 +156,7 @@ const EventForm = () => {
                     </label>
                     <textarea
                         className="w-full rounded-lg border-gray-200 p-3 text-sm shadow-lg"
-                        placeholder="content"
+                        placeholder="Tell about event"
                         rows={8}
                         value={event.content}
                         name="content"

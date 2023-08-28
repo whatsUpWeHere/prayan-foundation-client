@@ -76,9 +76,10 @@ const ContactForm = () => {
                     </h2>
                 </div>
                 <div className="contact-img w-[100%] bg-cover bg-center bg-no-repeat bg-fixed   ">
-                    <Image src={contact} alt="Image"></Image>
+                    <img src="https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/contact.png?raw=true" style={{width:"100%",height:"40%"}} alt="Image"/>
                 </div>
-                <section className="bg-[#FDE5EC] text-black max-w-[70%]  border border-gray-300 rounded-lg shadow-md mx-auto">
+                {/* bg-[#FDE5EC] */}
+                <section className="bg-[#D5e0e8] text-black max-w-[70%]  border border-gray-300 rounded-lg shadow-md mx-auto">
                     <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md  ">
                         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-[#4A4C70] ">
                             Contact Us
@@ -87,7 +88,7 @@ const ContactForm = () => {
                         <form className="space-y-8" onSubmit={handleSubmit}>
                             <div>
                                 <label className="block mb-2 text-sm font-medium text-gray-900 ">
-                                    name
+                                    Name
                                 </label>
                                 <input
                                     type="text"

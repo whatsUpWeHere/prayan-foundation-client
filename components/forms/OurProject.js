@@ -26,10 +26,10 @@ const Ourproject = () => {
             </div>
             <Row>
                 {Ourprojects.map((card, index) => (
-                    <Col lg={3} md={4} sm={6} xs={12} className="p-2" key={index}>
+                    <Col lg={4} md={5} sm={6} xs={12} className="p-2" key={index}>
                         <div className="causes-item bg-white border  rounded-lg shadow-lg p-6">
-                            <div className="causes-img" id="initiative-img">
-                                <Image src={card.imageSrc} alt="Image" width={100} height={100} className="w-full h-auto" />
+                            <div className="causes-img justify-center" id="initiative-img">
+                                <Image src={card.imageSrc} alt="Image" width={400} height={200} className="w-full h-auto" />
                             </div>
                             <div
                                 className={`causes-text mt-4 ${expandedStates[index] ? 'expanded' : ''
