@@ -10,9 +10,9 @@ const EventTable = () => {
 
     const { dbID } = user?.unsafeMetadata;
 
-    const editEventHandle = () => {
-        //
-    };
+    // const editEventHandle = () => {
+    //     //
+    // };
     const deleteEventHandle = async (id) => {
         const result = confirm("Are you sure you want to delete this event?");
         if (result) {
@@ -27,6 +27,11 @@ const EventTable = () => {
                         },
                     }
                 );
+
+                if (response.status === 401) {
+                    alert("You are not authorized to create event");
+                    return;
+                }
                 if (response.ok) {
                     const responseObject = await response.json();
                     console.log("responseObject is ", responseObject);
@@ -61,6 +66,7 @@ const EventTable = () => {
                     },
                 }
             );
+
             if (response.ok) {
                 const data = await response.json();
                 console.log("events are ", data.events);
@@ -124,14 +130,14 @@ const EventTable = () => {
                                 <td className="whitespace-nowrap px-4 py-2 text-gray-700 dark:text-gray-200">
                                     {event.venue}
                                 </td>
-                                <td className="whitespace-nowrap px-4 py-2">
+                                {/* <td className="whitespace-nowrap px-4 py-2">
                                     <button
                                         className="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
                                         onClick={editEventHandle}
                                     >
                                         Edit
                                     </button>
-                                </td>
+                                </td> */}
                                 <td className="whitespace-nowrap px-4 py-2">
                                     <button
                                         className="inline-block rounded bg-red-600 px-4 py-2 text-xs font-medium text-white hover:bg-red-700"

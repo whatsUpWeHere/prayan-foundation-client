@@ -22,7 +22,6 @@ const Navbar = () => {
 
     const { user } = useUser();
 
-
     useEffect(() => {
         const handleScroll = () => {
             setScrolling(true);
@@ -51,12 +50,19 @@ const Navbar = () => {
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between">
                     <div className="md:flex md:items-center md:gap-12">
-                        <Link className="block text-teal-600" href="/">
+                        <Link
+                            className="flex justify-center items-center no-underline  text-teal-600"
+                            href="/"
+                        >
                             <Image
                                 src={logo}
                                 alt={logo}
                                 className="w-[6rem]"
                             ></Image>
+
+                            <span className="hidden sm:block text-4xl font-extrabold  text-gray-200 pl-3 underline- justify-center items-center">
+                                Prayan Foundation
+                            </span>
                         </Link>
                     </div>
                     <div className="hidden md:block">
@@ -68,8 +74,8 @@ const Navbar = () => {
                                             key={index}
                                             className={`${
                                                 active == item.name
-                                                    ? "text-white border-b-2 border-teal-600"
-                                                    : "text-gray-400"
+                                                    ? "text-white border-2 border-b-teal-600"
+                                                    : "text-gray-200"
                                             }`}
                                         >
                                             <Link

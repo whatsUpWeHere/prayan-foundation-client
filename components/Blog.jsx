@@ -20,7 +20,7 @@ const Blog = () => {
     return (
         <Container>
             <div className=" flex items-center justify-center flex-col mx-auto pt-13">
-                <h3 className="font-bold text-2xl text-[#fdbe33]">  Our Projects</h3>
+                <h3 className="font-bold text-2xl text-[#fdbe33]">  Our Blog</h3>
                 <p className="text-[#4A4C70] text-4xl text-center letter-wider font-semibold px-13 py-7 border border-red-500">
                     Have a look on working of our Projects
                 </p>
@@ -42,7 +42,7 @@ const Blog = () => {
                                     className={`mt-2 text-gray-600 ${expandedStates[index] ? 'expanded' : ''
                                         }`}
                                 >
-                                    {card.description}
+                                    {card.content}
                                 </p>
                             </div>
                             <div className="causes-btn mt-4 border-2 flex justify-center items-center  mx-auto" id="footer-in">
