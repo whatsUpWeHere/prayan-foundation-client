@@ -2,7 +2,6 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import React from "react";
 import EventForm from "@/components/forms/EventForm";
-import Event from "@/components/Event";
 import EventTable from "@/components/dashboard/EventTable";
 
 const EventHorizontalTabs = () => {

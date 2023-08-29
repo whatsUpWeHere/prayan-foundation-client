@@ -1,5 +1,4 @@
 'use client'
-import SectionWrapper from "@/hoc/SectionWrapper";
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AboutLink from '@/components/nav-link-components/AboutLink';
