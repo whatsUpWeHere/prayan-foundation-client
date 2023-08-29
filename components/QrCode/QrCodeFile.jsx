@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./QrCodeStyleSheet.css";
-import { QRCode } from "@/assets";
+// import { QRCode } from "@/assets";
 import { QRCode2 } from "@/assets";
 
 const QrCodeFile = () => {

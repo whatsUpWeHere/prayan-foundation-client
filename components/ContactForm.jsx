@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { contact } from "@/assets";
+// import { contact } from "@/assets";
 import Image from "next/image";
 import SectionWrapper from "@/hoc/SectionWrapper";
 import emailjs from "@emailjs/browser";
