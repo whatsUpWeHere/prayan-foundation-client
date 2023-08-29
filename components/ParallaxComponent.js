@@ -13,7 +13,7 @@ const ParallaxComponent = () => {
                     <div className="row border my-5 ">
                         <div className="col-lg-3  col-md-6 py-[0.125rem]">
                             <div className="facts-item">
-                                <img src="https://cdn.discordapp.com/attachments/920675701101830187/1145765349963346031/college.png"/>
+                                <img src="https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/collage.png?raw=true"/>
                                 <div className="facts-text">
                                     <h3 className="facts-plus text-xl lg:text-4xl font-semibold text-[#ffc23f]">
                                         <CountUp start={0} end={20} duration={7.5} />+

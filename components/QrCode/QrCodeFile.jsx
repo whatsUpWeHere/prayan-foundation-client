@@ -36,11 +36,11 @@ const QrCodeFile = () => {
                         Wanna Contribute</h2>
                         <p className="text-[#ffff] text-5xl text-center letter-wider font-semibold  py-3 mx-auto">
                         Prayan Foundation</p>
-                        <h5 className="text-[#ffff] mx-auto font-bold">"Drops of water makes a mighty ocean"- Though we are self-funded and self-sufficienctly operating since November 2022, 
+                        <h5 className="text-[#ffff] mx-auto font-bold">&quot;Drops of water makes a mighty ocean&quot;- Though we are self-funded and self-sufficienctly operating since November 2022, 
                             but now when we are growing our dreams of serving a mass which knows no boundations; we need your help. Every small donation counts. 
-                            Every penny of your's might help an orphan get her means of learning or a jobless man get his means of survival arranged or a safety 
-                            apparel to some stray animal preventing the often occuring casualties. You never know when you earn someone's blessings through your 
-                            selfless act of kindness. Donate now to secure a spot in someone's prayers!</h5>
+                            Every penny of your&apos;s might help an orphan get her means of learning or a jobless man get his means of survival arranged or a safety 
+                            apparel to some stray animal preventing the often occuring casualties. You never know when you earn someone&apos;s blessings through your 
+                            selfless act of kindness. Donate now to secure a spot in someone&apos;s prayers!</h5>
                     
                         <span><Image src={QRCode2} id="qr-code" alt="QrCode" width="300px" height="300px"/></span>
                     </div>
