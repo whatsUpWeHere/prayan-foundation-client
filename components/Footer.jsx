@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import '@/app/globals.css'
 import { logo } from "@/assets";
 
 const Footer = () => {
@@ -60,19 +61,21 @@ const Footer = () => {
                                 <p className="font-medium text-[#FDBE33]">
                                     Navigation Links
                                 </p>
-                                <ul className="mt-6 space-y-4 text-sm">
-                                    <li>
+                                <ul className="mt-6 space-y-4 text-sm  list-none pl-0">
+                                    <li >
                                         <Link
                                             href="/about"
-                                            className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                                            className=" transition hover:opacity-75 text-gray-200 "
+                                            
                                         >
                                             about us
                                         </Link>
                                     </li>
+
                                     <li>
                                         <Link
                                             href="/our-units"
-                                            className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                                            className="transition hover:opacity-75 text-gray-200"
                                         >
                                             Our Units
                                         </Link>
@@ -80,7 +83,7 @@ const Footer = () => {
                                     <li>
                                         <Link
                                             href="/events"
-                                            className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                                            className="transition hover:opacity-75 text-gray-200"
                                         >
                                             Events
                                         </Link>
@@ -88,7 +91,7 @@ const Footer = () => {
                                     <li>
                                         <Link
                                             href="/blog"
-                                            className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                                            className="transition hover:opacity-75 text-gray-200"
                                         >
                                             Our Blog
                                         </Link>
@@ -99,11 +102,11 @@ const Footer = () => {
                                 <p className="font-medium text-[#FDBE33]">
                                     Quick Links
                                 </p>
-                                <ul className="mt-6 space-y-4 text-sm">
+                                <ul className="list-none mt-6 space-y-4 text-sm pl-0">
                                     <li>
                                         <Link
                                             href="/donate"
-                                            className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                                            className="transition hover:opacity-75 text-gray-200"
                                         >
                                             Donate Us
                                         </Link>
@@ -111,7 +114,7 @@ const Footer = () => {
                                     <li>
                                         <Link
                                             href="/contact"
-                                            className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                                            className="transition hover:opacity-75 text-gray-200"
                                         >
                                             Contact
                                         </Link>
@@ -119,7 +122,7 @@ const Footer = () => {
                                     <li>
                                         <Link
                                             href="/dashboard"
-                                            className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                                            className="transition hover:opacity-75 text-gray-200"
                                         >
                                             Admin Dashboard
                                         </Link>
@@ -131,11 +134,11 @@ const Footer = () => {
                                 <p className="font-medium text-[#FDBE33]">
                                     People behind prayan
                                 </p>
-                                <ul className="mt-6 space-y-4 text-sm">
+                                <ul className=" mt-6 space-y-4 text-sm pl-0 list-none">
                                     <li>
                                         <Link
                                             href="/about/developers"
-                                            className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                                            className="transition hover:opacity-75 text-gray-200"
                                         >
                                             developers
                                         </Link>
@@ -143,7 +146,7 @@ const Footer = () => {
                                     <li>
                                         <Link
                                             href="#"
-                                            className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                                            className="transition hover:opacity-75 text-gray-200"
                                         >
                                             FAQs
                                         </Link>
@@ -151,7 +154,7 @@ const Footer = () => {
                                     <li>
                                         <Link
                                             href="#"
-                                            className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                                            className="transition hover:opacity-75 text-gray-200"
                                         >
                                             Live Chat
                                         </Link>

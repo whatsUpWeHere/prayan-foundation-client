@@ -4,6 +4,7 @@ import Image from "next/image";
 import { logo } from "@/assets";
 import Link from "next/link";
 import { nav_data } from "@/constants";
+import "@/app/globals.css"
 import UserProfileCard from "./cards/UserProfileCard";
 
 import {
@@ -67,15 +68,15 @@ const Navbar = () => {
                     </div>
                     <div className="hidden md:block">
                         <nav aria-label="Global">
-                            <ul className="flex items-center gap-6 text-sm ">
+                            <ul className="flex items-center gap-6 text-sm list-none pl-0">
                                 {nav_data.map((item, index) => {
                                     return (
                                         <li
                                             key={index}
                                             className={`${
                                                 active == item.name
-                                                    ? "text-white border-2 border-b-teal-600"
-                                                    : "text-gray-200"
+                                                    ? "text-white border-b-2 border-b-teal-600"
+                                                    : "text-gray-400"
                                             }`}
                                         >
                                             <Link
@@ -178,7 +179,7 @@ const Navbar = () => {
                                 </div>
                                 <ul
                                     className="py-2"
-                                    aria-labelledby="user-menu-button"
+                                    aria-labelledby="user-menu-button list-none pl-0"
                                 >
                                     {nav_data.map((item, index) => {
                                         return (

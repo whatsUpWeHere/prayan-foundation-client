@@ -29,7 +29,7 @@ function Cards() {
             >
               <div
                 className={`card relative shadow-lg overflow-hidden m-2 flex gap-2 justify-center flex-col items-center mx-auto`}
-                style={{ width: '16rem' }}
+                style={{ width: '256px' }}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
@@ -43,8 +43,10 @@ function Cards() {
                 />
                 <div className={` rounded-lg bg-black opacity-75 shadow-lg absolute w-[80%] flex p-4 pb-6 text-white flex-col justify-center items-center hover-info transition-all duration-300 ${hoveredIndex === index ? 'top-[168px]' : 'top-[228px] '
                   }`}>
-                  <p className="font-bold text-[0.875rem]">{card.name}</p>
-                  <p className="text-sm text-center">{card.role}</p>
+                  <div className='flex flex-col items-center justify-center'>
+                    <p className="font-bold text-[0.875rem]">{card.name}</p>
+                    <p className="text-sm text-center">{card.role}</p>
+                  </div>
                   <div className="flex justify-center gap-3 mb-2 mt-4 items-center">
                     <Link href="#" className="transition-transform duration-300 text-[30px] hover:scale-110 shadow-lg text-red-500">
                       <FaInstagram />

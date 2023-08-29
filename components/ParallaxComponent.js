@@ -13,7 +13,7 @@ const ParallaxComponent = () => {
                     <div className="row border my-5 ">
                         <div className="col-lg-3  col-md-6 py-[0.125rem]">
                             <div className="facts-item">
-                                <i className="flaticon-home"></i>
+                                <img src="https://cdn.discordapp.com/attachments/920675701101830187/1145765349963346031/college.png"/>
                                 <div className="facts-text">
                                     <h3 className="facts-plus text-xl lg:text-4xl font-semibold text-[#ffc23f]">
                                         <CountUp start={0} end={20} duration={7.5} />+
@@ -49,7 +49,7 @@ const ParallaxComponent = () => {
                                 <i className="flaticon-kindness"></i>
                                 <div className="facts-text">
                                     <h3 className="facts-plus text-xl lg:text-4xl font-semibold text-[#ffc23f]">
-                                        <CountUp start={0} end={20000} duration={7.5} />
+                                        <CountUp start={0} end={20000} duration={7.5} />+
                                     </h3>
                                     <p className='text-xl lg:text-2xl text-[#fdbe33] font-semibold'>People Served till now</p>
                                 </div>

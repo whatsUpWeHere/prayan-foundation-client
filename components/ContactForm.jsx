@@ -19,9 +19,9 @@ const ContactForm = () => {
         setForm({ ...form, [name]: value });
     };
 
-    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
-    const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
-    const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+    const serviceId = process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY;
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -34,8 +34,8 @@ const ContactForm = () => {
                 templateId,
                 {
                     from_name: form.name,
-                    to_name: "Prakash",
-                    to_email: ["prakashsinghrawatuk5ile@gmail.com"],
+                    to_name: "Prayan Foundation",
+                    to_email: ["pryanfoundations@gmail.com"],
                     message: form.message,
                     reply_to: form.email,
                 },

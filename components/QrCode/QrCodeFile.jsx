@@ -7,7 +7,7 @@ import { QRCode } from "@/assets";
 import { QRCode2 } from "@/assets";
 
 const QrCodeFile = () => {
-    const bgimg = "https://source.unsplash.com/random?donate,charity,help,poor";
+    const bgimg = "https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/donate.jpg?raw=true";
     const sectionStyle = {
         backgroundImage: `url(${bgimg})`,
         backgroundSize: "cover",
@@ -32,13 +32,16 @@ const QrCodeFile = () => {
             <div className="container px-4 py-5 px-md-5 text-center text-lg-start my-5 sticky-class">
                 <div className="row gx-lg-5 align-items-center mb-5 sticky-class">
                     <div className="col-lg-6 mb-5 mb-lg-0 sticky-class" style={{ zIndex: 10 }} >
-                        <h1 className="my-5 display-5 fw-bold ls-tight" style={{ color: 'hsl(218, 81%, 95%)' }}>
-                            hello asdf <br />
-                            <span style={{ color: 'hsl(218, 81%, 75%)' }}>dfa dfas</span>
-                        </h1>
-                        <p className="mb-4 opacity-70" style={{ color: 'hsl(218, 81%, 85%)' }}>
-                          dsafasd 
-                        </p>
+                    <h2 className="mx-auto text-3xl text-[#fdbe33] font-bold">
+                        Wanna Contribute</h2>
+                        <p className="text-[#ffff] text-5xl text-center letter-wider font-semibold  py-3 mx-auto">
+                        Prayan Foundation</p>
+                        <h5 className="text-[#ffff] mx-auto font-bold">"Drops of water makes a mighty ocean"- Though we are self-funded and self-sufficienctly operating since November 2022, 
+                            but now when we are growing our dreams of serving a mass which knows no boundations; we need your help. Every small donation counts. 
+                            Every penny of your's might help an orphan get her means of learning or a jobless man get his means of survival arranged or a safety 
+                            apparel to some stray animal preventing the often occuring casualties. You never know when you earn someone's blessings through your 
+                            selfless act of kindness. Donate now to secure a spot in someone's prayers!</h5>
+                    
                         <span><Image src={QRCode2} id="qr-code" alt="QrCode" width="300px" height="300px"/></span>
                     </div>
 
