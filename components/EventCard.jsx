@@ -1,5 +1,5 @@
-'use client'
-import React, {useState} from "react";
+"use client";
+import React, { useState } from "react";
 import { event_1 } from "@/assets";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,8 +12,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const EventCard = ({ content, date, heading, time, venue, image }) => {
-    console.log(content, date, heading, time, venue, image);
-
     const formatDateToLong = (dateString) => {
         const date = new Date(dateString);
         const year = date.getFullYear();
@@ -22,18 +20,26 @@ const EventCard = ({ content, date, heading, time, venue, image }) => {
         return `${day}-${month}-${year}`;
     };
 
-   
-
     return (
-        <div className="event-item bg-blue-100  mb-6 p-4 max-w-[400px] shadow-lg">
-            <Image
-               
-                src={image}
-                alt="Image"
-                width={400}
-                height={300}
-                className="w-full"
-            />
+        <div className="event-item bg-blue-100 mb-6 p-4 max-w-[500px] shadow-lg">
+            <div
+                className="image-container "
+                style={{
+                    width: "400px",
+                    height: "300px",
+                    overflow: "hidden",
+                    position: "relative",
+                }}
+            >
+                <Image
+                    src={image}
+                    alt="Image"
+                    layout="fill"
+                    objectFit="cover" // This property controls how the image is displayed
+                    objectPosition="center top" // You can adjust this to control the focal point of the image
+                    // className="w-full h-full"
+                />
+            </div>
             <div className="event-content py-6 pl-2 flex-col">
                 <div className="event-meta shadow-sm flex flex-col items-start justify-center  py-1">
                     <p className="flex items-center mb-2  border  shadow-sm">
