@@ -21,15 +21,10 @@ const EventCard = ({ content, date, heading, time, venue, image }) => {
     };
 
     return (
-        <div className="event-item bg-blue-100 mb-6 p-4 max-w-[500px] shadow-lg">
+        <div className="event-item bg-blue-100 mb-6 p-4 max-w-[400px] shadow-lg">
             <div
-                className="image-container "
-                style={{
-                    width: "400px",
-                    height: "300px",
-                    overflow: "hidden",
-                    position: "relative",
-                }}
+                className="image-container md:w-[350px] w-[300px] overflow-hidden  relative h-[200px] md:h-[250px]"
+               
             >
                 <Image
                     src={image}

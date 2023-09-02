@@ -110,14 +110,14 @@ const Navbar = () => {
                         <SignedOut>
                             <div className="sm:flex sm:gap-4">
                                 <Link
-                                    className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"
+                                    className="rounded-md bg-teal-600 px-4 py-2.5 text-sm font-medium text-white shadow"
                                     href="/sign-in"
                                 >
                                     Login
                                 </Link>
                                 <div className="hidden sm:flex">
                                     <Link
-                                        className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
+                                        className="rounded-md bg-gray-100 px-4 py-2.5 text-sm font-medium text-teal-600"
                                         href="/sign-up"
                                     >
                                         Register

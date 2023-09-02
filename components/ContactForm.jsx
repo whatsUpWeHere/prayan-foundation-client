@@ -79,7 +79,7 @@ const ContactForm = () => {
                     <img src="https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/contact.png?raw=true" style={{width:"100%",height:"40%"}} alt="Image"/>
                 </div>
                 {/* bg-[#FDE5EC] */}
-                <section className="bg-[#D5e0e8] text-black max-w-[70%]  border border-gray-300 rounded-lg shadow-md mx-auto">
+                <section className="bg-[#D5e0e8] text-black max-w-[90%] md:max-w-[70%] border border-gray-300 rounded-lg shadow-md mx-auto">
                     <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md  ">
                         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-[#4A4C70] ">
                             Contact Us
