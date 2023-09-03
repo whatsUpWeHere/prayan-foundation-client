@@ -30,7 +30,10 @@ const nav_data = [
     {
         name: 'Donate',
         path: '/donate'
-    },
+    },{
+        name: 'Become a Volunteer',
+        path: '/volunteer'
+    }
 
 ]
 

@@ -19,7 +19,7 @@ function TestimonialSection() {
         <Row>
           {testimonialData.map((testimonial, index) => (
             <Col lg={3} md={6} key={index}>
-              <div className="testimonial-item p-10 text-center bg-white shadow-md rounded-lg m-4">
+              <div className="testimonial-item p-10 text-center bg-white shadow-md rounded-lg m-4 w-full h-100">
                 <div className="testimonial-profile mb-4">
                   <Image
                     src={testimonial.imageSrc}

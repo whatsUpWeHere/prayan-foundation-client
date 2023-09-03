@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={`${inter.className} bg-[#F3F4F6] w-full overflow-x-hidden overflow-y-auto`}>
+        <body className={`${inter.className} bg-[#F3F4F6] w-full overflow-x-hidden overflow-y-auto `}>
           <Navbar />
 
           <div className='min-h-screen'>

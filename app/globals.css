@@ -6,3 +6,19 @@ a {
     text-decoration: none !important;
 }
 
+/* Hide the scrollbar */
+body {
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: transparent transparent; /* For Firefox */
+    overflow-y: scroll; /* For Webkit-based browsers like Chrome and Safari */
+  }
+  
+  /* Hide the scrollbar for Webkit-based browsers like Chrome and Safari */
+  body::-webkit-scrollbar {
+    width: 0px; /* Adjust the width as needed */
+  }
+  
+  /* Hide the scrollbar thumb for Webkit-based browsers */
+  body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }

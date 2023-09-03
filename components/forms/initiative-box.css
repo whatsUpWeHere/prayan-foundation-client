@@ -6,8 +6,11 @@
 }
 
 #initiative-img img {
-    height: 70%;
+    border-radius: 4%;
+    height: 10rem;
     width: 90%;
+    margin: auto;
+    align-items: center;
     transition: transform 1s;
 }
 
@@ -29,4 +32,53 @@
     /* Corrected spelling from 'expended' to 'expanded' */
     height: auto;
     overflow: visible;
+}
+
+.fancy-button {
+    position: relative;
+    width: auto;
+
+    height: 50px;
+    font-size: 18px;
+    background-color: rgb(221, 174, 174);
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+ 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    overflow: hidden;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 30px solid #ff0000;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+.triangle.show {
+    opacity: 1;
+}
+
+.fancy-button:hover {
+    background-color: #8ee299;
+    transform: scale(1.05);
+}
+
+.fancy-button.clicked {
+    background-color: #ff6600;
+    transform: scale(0.95);
 }
