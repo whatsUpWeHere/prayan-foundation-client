@@ -36,7 +36,7 @@ function CabinetCards() {
                   width={300}
                   height={300}
                 />
-                <div className={` rounded-lg bg-black opacity-75 shadow-lg absolute w-[80%] flex p-4 pb-6 text-white flex-col justify-center items-center hover-info transition-all duration-300 ${hoveredIndex === index ? 'top-[127px]' : 'top-[181px] '
+                <div className={` rounded-lg bg-black opacity-75 shadow-lg absolute w-[80%] flex p-4 pb-6 text-white flex-col justify-center items-center hover-info transition-all duration-300 ${hoveredIndex === index ? 'top-[8em]' : 'top-[11.5em] '
                   }`}>
                   <p className="font-bold text-[0.875rem]">{card.name}</p>
                   <p className="text-sm text-center">{card.role}</p>
