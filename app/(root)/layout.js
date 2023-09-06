@@ -1,5 +1,5 @@
 import Footer from '@/components/Footer'
-import Navbar from '@/components/Navbar'
+import AppNavbar from '@/components/Navbar1'
 import '../globals.css'
 import { Inter } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <html lang="en">
         <ContextProvider>
           <body className={`${inter.className} bg-[#F3F4F6] w-full overflow-x-hidden overflow-y-auto `}>
-            <Navbar />
+            <AppNavbar />
 
             <div className='min-h-screen'>
               {children}

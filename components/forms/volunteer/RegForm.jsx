@@ -24,7 +24,7 @@ const FormComponent = () => {
     };
 
     const [formData, setFormData] = useState({
-        selectedImage: null,
+        volunteerImage: null,
         name: "",
         parentName: "",
         bloodGroup: "",
@@ -34,9 +34,9 @@ const FormComponent = () => {
         age: "",
         profession: "",
         instituteName: "",
-        classValue: "",
-        collegeYearValue: "",
-        professionNameValue: "",
+        class: "",
+        collegeYear: "",
+        professionalName: "",
         socialOther: "",
         socialSocial: "",
         address: "",
@@ -62,39 +62,47 @@ const FormComponent = () => {
     const handleImageChange = (event) => {
         setFormData({
             ...formData,
-            selectedImage: event.target.files[0],
+            volunteerImage: event.target.files[0],
         });
     };
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        const { name, email } = formData;
         // You can access the form data in formData object here and send it to the backend.
         console.log("volunteer data: ", formData);
+        createVolunteer({
+            name,
+            email,
+            role: "volunteer",
+            volunteerObj: formData,
+        });
+
         setIsSubmitted(true);
-        // createVolunteer(name, email, formData);
     };
 
-    const formData2 = {
-        name: "testname",
-        email: "textEmail@gmail.com",
-        phoneNumber: "98745",
-        parentName: "xxxxxxx",
-    };
+    // const formData2 = {
+    //     name: "somename",
+    //     email: "111@gmail.com",
+    //     phoneNumber: "111",
+    //     parentName: "1111",
+    // };
     return (
         <>
-            <button
+            {/* <button
                 onClick={() => {
                     createVolunteer({
-                        name: "testname",
-                        email: "testEmail@gmail.com",
+                        name: "somename",
+                        email: "111@gmail.com",
+                        role: "1111",
+
                         volunteerObj: formData2,
                     });
                 }}
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
             >
                 test api : ignore me pls
-
-            </button>
+            </button> */}
             {isSubmitted ? (
                 <div className="border-2 border-gray-400 w-[90vw] md:w-[70vw]  md:p-7 p-2 ">
                     <p className="text-[#4A4C70] text-4xl text-center letter-wider font-semibold py-2 ">
@@ -245,8 +253,8 @@ const FormComponent = () => {
                                         <Form.Control
                                             type="number"
                                             placeholder="Enter your Class"
-                                            name="classValue"
-                                            value={formData.classValue}
+                                            name="class"
+                                            value={formData.class}
                                             onChange={handleInputChange}
                                         />
                                     </Col>
@@ -269,8 +277,8 @@ const FormComponent = () => {
                                         <Form.Control
                                             type="number"
                                             placeholder="Enter your College Year"
-                                            name="collegeYearValue"
-                                            value={formData.collegeYearValue}
+                                            name="collegeYear"
+                                            value={formData.collegeYear}
                                             onChange={handleInputChange}
                                         />
                                     </Col>
@@ -283,8 +291,8 @@ const FormComponent = () => {
                                         <Form.Control
                                             type="text"
                                             placeholder="Enter your Profession Name"
-                                            name="professionNameValue"
-                                            value={formData.professionNameValue}
+                                            name="professionalName"
+                                            value={formData.professionalName}
                                             onChange={handleInputChange}
                                         />
                                     </Col>

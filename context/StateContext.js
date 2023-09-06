@@ -6,16 +6,19 @@ const StateContext = createContext();
 
 export function ContextProvider({ children }) {
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [success, setSuccess] = useState(false);
 
 
   return (
-    <StateContext.Provider value={{ isSubmitted, setIsSubmitted }}>
+    <StateContext.Provider value={{ isSubmitted, setIsSubmitted, success, setSuccess }}>
       {children}
     </StateContext.Provider>
   );
 }
 
 // Create a custom hook to access the context
-export function useContextValues() {
+ const useContextValues = () =>{
   return useContext(StateContext);
 }
+
+export { useContextValues}
