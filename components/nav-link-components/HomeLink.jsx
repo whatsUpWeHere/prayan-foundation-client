@@ -6,10 +6,12 @@ import OurInfo from "@/components/OurInfo";
 import SectionWrapper from "@/hoc/SectionWrapper";
 import Ourproject from "../forms/OurProject";
 import OurIni from "@/components/crousel/CardSet1";
+import HomeCarousel from '@/components/crousel/HomeCarousel';
 
 function Home() {
     return (
         <>
+            <HomeCarousel />
             <OurInfo />
             <ParallaxComponent />
             <OurIni/>

@@ -59,8 +59,8 @@ function AppNavbar() {
                         <img
                             src="https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/logo.png?raw=true"
                             alt="Prayan Foundation"
-                            width="50rem"
-                            height="50rem"
+                            width="48rem"
+                            height="48rem"
                             className="d-inline-block mt-1 align-top brandImg"
                         />{" "}
                         <h2 className="d-inline-block align-center mt-3">
@@ -122,13 +122,13 @@ function AppNavbar() {
                                         Login
                                     </Button>
                                 </Link>
-                                <div className="hidden sm:flex">
+                                {/* <div className=" sm:flex">
                                     <Link href="/sign-up">
                                         <Button variant="light">
                                             Register
                                         </Button>
                                     </Link>
-                                </div>
+                                </div> */}
                             </div>
                         </SignedOut>
                     </Nav>
@@ -141,14 +141,20 @@ function AppNavbar() {
                 placement="end"
             >
                 <Offcanvas.Header
-                    closeButton
-                    className="custom-close-button"
+                    // className="custom-close-button"
                     style={{ backgroundColor: "#333", color: "white" }}
                 >
                     <Offcanvas.Title>Menu</Offcanvas.Title>
+                    <button
+                    type="button"
+                    className="btn-close custom-close-button"
+                    onClick={closeOffcanvas}
+                    style={{color:"white"}}>
+                        <strong>X</strong>
+                    </button>
                 </Offcanvas.Header>
                 <Offcanvas.Body style={{ backgroundColor: "#f0f0f0" }}>
-                    <Nav className="flex-column">
+                    <Nav className="flex-column m-auto">
                         {/* Add some custom CSS classes for styling */}
                         <Nav.Link
                             href="/"
@@ -225,17 +231,17 @@ function AppNavbar() {
                             </SignedIn>
                         )}
                         <SignedOut>
-                            <div className="sm:flex sm:gap-4">
+                            <div className="m-auto p-3 sm:flex sm:gap-4">
                                 <Link href="/sign-in">
                                     <Button variant="dark" className="mx-2">
                                         Login
                                     </Button>
                                 </Link>
-                                <div className="sm:flex">
+                                {/* <div className="sm:flex mt-2">
                                     <Link href="/sign-up">
                                         <Button variant="dark">Register</Button>
                                     </Link>
-                                </div>
+                                </div> */}
                             </div>
                         </SignedOut>
                     </Nav>

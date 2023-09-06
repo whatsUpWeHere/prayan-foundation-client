@@ -12,7 +12,7 @@ const VolunteerLink = () => {
 
     return (
         <>
-            <div className="mx-auto px-5 flex justify-center items-center flex-col">
+            <div className="mx-auto px-3 lg:px-5 flex justify-center items-center flex-col">
                 {isSubmitted == false ? (
                     <div className=" flex items-center justify-center flex-col mx-auto">
                         <h3 className="font-bold text-xl text-[#fdbe33]">
