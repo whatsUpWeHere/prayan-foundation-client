@@ -497,7 +497,7 @@ const FormComponent = () => {
 
                         <div className="text-center flex justify-center items-center flex-col gap-3">
                             <ReCaptcha
-                                sitekey={test_SITE_KEY}
+                                sitekey={SITE_KEY}
                                 onChange={handleVerify}
                             />
                             <Button
