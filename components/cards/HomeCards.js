@@ -11,9 +11,9 @@ function HomeCards() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className="testimonial mt-13">
+    <div className="mt-5">
       <Container>
-        <div className=" flex items-center justify-center flex-col mx-auto pt-13">
+        <div className=" flex items-center justify-center flex-col mx-auto pt-13 mt-5">
           <h3 className="font-bold text-2xl text-[#fdbe33]">  Meet Our Team</h3>
           <p className="text-[#4A4C70] text-5xl text-center letter-wider font-semibold px-13 py-7 ">
             Awesome guys behind Prayan <span className='block p-2'>Foundation</span>

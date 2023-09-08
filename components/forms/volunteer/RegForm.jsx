@@ -440,7 +440,7 @@ const FormComponent = () => {
                             </Col>
                         </fieldset>
                         <Form.Group controlId="exampleForm.ControlTextarea1">
-                            <Form.Label>Why you'd like to join</Form.Label>
+                            <Form.Label>Why you&apos;d like to join</Form.Label>
                             <Form.Control
                                 as="textarea"
                                 rows={4}
@@ -451,7 +451,7 @@ const FormComponent = () => {
                         </Form.Group>
                         <Form.Group controlId="exampleForm.ControlTextarea1">
                             <Form.Label>
-                                What type of work you'd like to do
+                                What type of work you&apos;d like to do
                             </Form.Label>
                             <Form.Control
                                 as="textarea"
