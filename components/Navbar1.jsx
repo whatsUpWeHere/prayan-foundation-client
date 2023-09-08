@@ -82,6 +82,9 @@ function AppNavbar() {
                             <NavDropdown.Item href="/our-units">
                                 OurUnits
                             </NavDropdown.Item>
+                            <NavDropdown.Item href="/about/developers">
+                                Our Developers
+                            </NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Event" id="blog-dropdown">
                             <NavDropdown.Item href="/events">
@@ -114,21 +117,35 @@ function AppNavbar() {
                         )}
                         <SignedOut>
                             <div className="sm:flex sm:gap-4">
-                                <Link href="/sign-in">
+                                <style type="text/css">
+                                    {`
+                                .btn-flat {
+                                    background-color: teal;
+                                    color: white;
+                                            }
+                                .btn-flat:hover {
+                                    background-color: #66b2b2 !important;
+                                    }
+
+                                .btn-xxl {
+                                    padding: 1rem 1.5rem;
+                                    font-size: 1.5rem;
+                                        }
+                                `}
+                                </style>
+                                {/* <Link href="/sign-in">
                                     <Button
                                         variant="outline-light"
                                         className="mx-2"
                                     >
                                         Login
                                     </Button>
-                                </Link>
-                                {/* <div className=" sm:flex">
-                                    <Link href="/sign-up">
-                                        <Button variant="light">
-                                            Register
-                                        </Button>
+                                </Link> */}
+                                <div className=" sm:flex">
+                                    <Link href="/sign-in">
+                                        <Button variant="flat">Login</Button>
                                     </Link>
-                                </div> */}
+                                </div>
                             </div>
                         </SignedOut>
                     </Nav>
@@ -146,10 +163,11 @@ function AppNavbar() {
                 >
                     <Offcanvas.Title>Menu</Offcanvas.Title>
                     <button
-                    type="button"
-                    className="btn-close custom-close-button"
-                    onClick={closeOffcanvas}
-                    style={{color:"white"}}>
+                        type="button"
+                        className="btn-close custom-close-button"
+                        onClick={closeOffcanvas}
+                        style={{ color: "white" }}
+                    >
                         <strong>X</strong>
                     </button>
                 </Offcanvas.Header>
@@ -177,6 +195,13 @@ function AppNavbar() {
                                 className="offcanvas-link"
                             >
                                 Our Units
+                            </NavDropdown.Item>
+                            <NavDropdown.Item
+                                href="/about/developers"
+                                onClick={closeOffcanvas}
+                                className="offcanvas-link"
+                            >
+                                Our Developers
                             </NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Event">
@@ -232,16 +257,19 @@ function AppNavbar() {
                         )}
                         <SignedOut>
                             <div className="m-auto p-3 sm:flex sm:gap-4">
-                                <Link href="/sign-in">
-                                    <Button variant="dark" className="mx-2">
+                                {/* <Link href="/sign-in">
+                                <Button
+                                        variant="outline-light"
+                                        className="mx-2"
+                                    >
                                         Login
                                     </Button>
-                                </Link>
-                                {/* <div className="sm:flex mt-2">
+                                </Link> */}
+                                <div className="sm:flex mt-2">
                                     <Link href="/sign-up">
-                                        <Button variant="dark">Register</Button>
+                                        <Button variant="flat">Login</Button>
                                     </Link>
-                                </div> */}
+                                </div>
                             </div>
                         </SignedOut>
                     </Nav>

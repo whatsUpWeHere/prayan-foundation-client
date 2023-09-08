@@ -1,8 +1,18 @@
 "use client";
 import React, { useState } from "react";
 import { useUser } from "@clerk/nextjs";
+import { storage } from "@/firebase";
+import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import { v4 } from "uuid";
+import { Form, Container, Row, Col } from "react-bootstrap";
+import { Button } from "react-bootstrap";
+import { useRef } from "react";
 
 const EventForm = () => {
+    const imageRef = useRef(null);
+    const [imageUpload, setImageUpload] = useState(null);
+    const MAX_IMAGE_SIZE = 300 * 1024; // 300KB in bytes
+
     // const backend_url = "https://ngo-site-backend.onrender.com";
     const backend_url = process.env.NEXT_PUBLIC_BACKEND_URL;
     const { user } = useUser();
@@ -13,7 +23,6 @@ const EventForm = () => {
         date: "",
         time: "",
         venue: "",
-        image: "",
     });
 
     const handleChange = (e) => {
@@ -25,9 +34,45 @@ const EventForm = () => {
         });
     };
 
-    const createEventButton = async (e) => {
+    const handleImageChange = (e) => {
+        setImageUpload(e.target.files[0]);
+    };
+
+    const handleUpload = (e) => {
         e.preventDefault();
-        console.log("event is: ",event);
+        if (!imageUpload) {
+            alert("Please upload an image");
+            return;
+        }
+        for (const key in event) {
+            if (!event[key]) {
+                alert("Please fill in all the fields");
+                return;
+            }
+        }
+
+        if (imageUpload) {
+            const imageRef = ref(
+                storage,
+                `/eventImages/${imageUpload.name + v4()}`
+            );
+
+            uploadBytes(imageRef, imageUpload).then((snapshot) => {
+                getDownloadURL(snapshot.ref).then((url) => {
+                    event.image = url;
+                    console.log("Image URL is:", url);
+                    console.log("event is:", event);
+
+                    createEventButton();
+                });
+
+                alert("Image uploaded");
+            });
+        }
+    };
+
+    const createEventButton = async () => {
+        console.log("event is: ", event);
 
         const userUnsafeMetaData = user?.unsafeMetadata;
         console.log("user: ", user);
@@ -54,7 +99,7 @@ const EventForm = () => {
             console.log("database response: ", response);
             console.log("event object response: ", eventObject);
 
-            if ( response.status === 201) {
+            if (response.status === 201) {
                 setEvent({
                     heading: "",
                     content: "",
@@ -63,9 +108,11 @@ const EventForm = () => {
                     venue: "",
                     image: "",
                 });
+
+                imageRef.current.value = null;
                 alert("Event Created Successfully");
-                console.log("Event Created Successfully")
-                return ;
+                console.log("Event Created Successfully");
+                return;
             }
         } catch (error) {
             console.log("some error creating event... ", error);
@@ -86,6 +133,7 @@ const EventForm = () => {
                         placeholder="Title of event"
                         type="text"
                         name="heading"
+                        required
                         value={event.heading}
                         onChange={handleChange}
                     />
@@ -101,6 +149,7 @@ const EventForm = () => {
                             placeholder="date"
                             type="date"
                             name="date"
+                            required
                             value={event.date}
                             onChange={handleChange}
                         />
@@ -115,38 +164,37 @@ const EventForm = () => {
                             placeholder="HH:mm"
                             type="time"
                             name="time"
+                            required
                             value={event.time}
                             onChange={handleChange}
                         />
                     </div>
                     <div>
                         <span className="ml-2">venue</span>
-                        <label className="sr-only" htmlFor="venue">
-                            
-                        </label>
+                        <label className="sr-only" htmlFor="venue"></label>
                         <input
                             className="w-full rounded-lg border-gray-200 p-3 text-sm shadow-lg"
                             placeholder="location of event"
                             type="text"
                             name="venue"
+                            required
                             value={event.venue}
                             onChange={handleChange}
                         />
                     </div>
-                    <div>
-                        <span className="ml-2">Image</span>
-                        <label className="sr-only" htmlFor="image">
-                             
-                        </label>
-                        <input
-                            className="w-full rounded-lg border-gray-200 p-3 text-sm shadow-lg"
-                            placeholder="Enter Image URL"
-                            type="text"
-                            name="image"
-                            value={event.image}
-                            onChange={handleChange}
+
+                    <Form.Group>
+                        <Form.Label>Image</Form.Label>
+                        <Form.Control
+                            type="file"
+                            accept="image/*"
+                            required
+                            ref={imageRef}
+                            onChange={(e) => {
+                                handleImageChange(e);
+                            }}
                         />
-                    </div>
+                    </Form.Group>
                 </div>
 
                 <div>
@@ -166,7 +214,7 @@ const EventForm = () => {
                 <div className="mt-4">
                     <button
                         type="submit"
-                        onClick={createEventButton}
+                        onClick={handleUpload}
                         className="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
                     >
                         Create Event

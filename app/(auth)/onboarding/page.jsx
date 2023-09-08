@@ -91,4 +91,6 @@ const page = async () => {
     redirect("/");
 };
 
+
+
 export default page;

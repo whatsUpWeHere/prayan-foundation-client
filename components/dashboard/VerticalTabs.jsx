@@ -14,7 +14,7 @@ const Dashboard = () => {
             <div className="w-[150px] bg-gray-200 p-4">
                 <div
                     onClick={() => handleTabClick(0)}
-                    className={`p- w-[100%] border-2 border-red-500 cursor-pointer ${
+                    className={`p- w-[100%] font-bold border-2 text-center border-b-blue-500 cursor-pointer ${
                         activeTab === 0 ? "bg-gray-300" : "bg-gray-100"
                     }`}
                 >
@@ -28,8 +28,8 @@ const Dashboard = () => {
                         <EventHorizontalTabs />
                     </div>
                 )}
-                {activeTab === 1 && <div>Required functionality will be added in future as per requirement</div>}
-                {activeTab === 2 && <div>Required functionality will be added in future as per requirement</div>}
+                {/* {activeTab === 1 && <div>Required functionality will be added in future as per requirement</div>}
+                {activeTab === 2 && <div>Required functionality will be added in future as per requirement</div>} */}
             </div>
         </div>
     );

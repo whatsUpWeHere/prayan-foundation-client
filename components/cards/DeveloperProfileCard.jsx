@@ -16,6 +16,8 @@ const DeveloperProfileCard = ({ card }) => {
                 <Image
                     src={image}
                     alt="profile-picture"
+                    width={150}
+                    height={150}
                     className="mx-auto rounded-full h-36 w-36 "
                 />
                 <div className="space-y-2">

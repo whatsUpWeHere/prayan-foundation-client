@@ -1,116 +1,84 @@
-
-
-#root-root {
-    padding: 0;
+#main-box {
+    height: 55em;
+    width: 25em;
+    overflow: hidden;
+    /* Use 'hidden' instead of 'none' */
 }
 
-a.minimise {}
-
-a.base {
-    text-decoration: none;
-}
-
-.service-item {
-    display: flex;
-    margin: 1em;
-}
-#main-card {
-    background-color: rgb(240, 240, 240);
-    border: none;
+#initiative-img img {
+    border-radius: 4%;
+    height: 10rem;
+    width: 90%;
     margin: auto;
-    display: flex;
-    border-radius:7%;
-    padding: 0.5%;
-    /* box-shadow: 0em 0.5em 1em rgba(3, 0, 65, 0.98); */
-    /* Add a shadow */
-    backdrop-filter: blur(2em);
-    /* Add a glassy effect */
-}
-#card-root {
-
-    overflow: hidden;
-}
-
-#div-root {
-
-    max-height: 10em;
-
-    overflow: hidden;
-}
-
-#conent-root {
-    max-height: 7em;
-
-    overflow: hidden;
-}
-
-#image-root {
-    /* width: 10em;
-    height: 15em;
-        border-radius: 50%;
-
-             */
-object-fit: cover;
-
-            width: 35rem;
-
-            height: 15em;
-
-            border-radius: 5%;
-
-            overflow: hidden;
-
-            margin-right: 0;
-
-            background-color: rgba(52, 152, 219, 0.6);
-
-            /* display: flex; */
-            align-items: center;
-            justify-content: center;
-            backdrop-filter: blur(5em);
-
-            box-shadow: 0em 2em 6em rgba(0, 0, 0, 0.1);
-
-}
-
-
-
-.expanded #conent-root,
-.expanded #div-root {
-    overflow: visible;
-    max-height: none;
-    /*------------------*/
-
-}
-/* Add these styles to your CSS */
-.fancy-button {
-    width: 50px;
-    /* Set a fixed width for the circular button */
-    height: 50px;
-    /* Set a fixed height for the circular button */
-    display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: rgba(52, 152, 219, 0.6);
-    color: white;
+    transition: transform 1s;
+}
+
+#initiative-img img:hover {
+    transform: scale(1.05);
+}
+
+.causes-text {
+    height: 10em;
+    overflow: hidden;
+}
+
+#initiative-button:hover {
+    transition: transform 1s;
+    transform: scale(1.05);
+}
+
+.expanded {
+    /* Corrected spelling from 'expended' to 'expanded' */
+    height: auto;
+    overflow: visible;
+}
+
+.fancy-button {
+    position: relative;
+    width: auto;
+
+    height: 50px;
+    font-size: 18px;
+    background-color: rgb(221, 174, 174);
+    color: #ffffff;
     border: none;
-    border-radius: 50%;
-    /* Make the button circular */
+    border-radius: 25px;
+ 
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    overflow: hidden;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 30px solid #ff0000;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+.triangle.show {
+    opacity: 1;
 }
 
 .fancy-button:hover {
-    background-color: rgba(185, 53, 41, 0.8);
+    background-color: #8ee299;
     transform: scale(1.05);
-    box-shadow: 0px 4px 8px rgba(0, 8, 41, 0.723);
 }
 
-#content-div
-{
-
-
-padding-left: 2em;
+.fancy-button.clicked {
+    background-color: #ff6600;
+    transform: scale(0.95);
 }

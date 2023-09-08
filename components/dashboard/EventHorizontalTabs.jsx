@@ -8,7 +8,7 @@ const EventHorizontalTabs = () => {
     return (
         <div className="flex flex-col  min-h-[100vh] ">
             <Tabs defaultValue="account" className="flex-grow">
-                <TabsList className="bg-gray-300 p-4">
+                <TabsList className="bg-gray-300 text-black p-4">
                     <TabsTrigger
                         value="create_event"
                         className="cursor-pointer p-2"

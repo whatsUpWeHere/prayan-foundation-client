@@ -68,7 +68,7 @@ const Footer = () => {
                                             className=" transition hover:opacity-75 text-gray-200 "
                                             
                                         >
-                                            about us
+                                            About Us
                                         </Link>
                                     </li>
 
@@ -140,7 +140,7 @@ const Footer = () => {
                                             href="/about/developers"
                                             className="transition hover:opacity-75 text-gray-200"
                                         >
-                                            developers
+                                            Developers
                                         </Link>
                                     </li>
                                     <li>

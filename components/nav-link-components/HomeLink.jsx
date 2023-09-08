@@ -7,6 +7,7 @@ import SectionWrapper from "@/hoc/SectionWrapper";
 import Ourproject from "../forms/OurProject";
 import OurIni from "@/components/crousel/CardSet1";
 import HomeCarousel from '@/components/crousel/HomeCarousel';
+import HomeCards from '@/components/cards/HomeCards';
 
 function Home() {
     return (
@@ -15,6 +16,7 @@ function Home() {
             <OurInfo />
             <ParallaxComponent />
             <OurIni/>
+            <HomeCards/>
             <TestimonialSection />
             <Event />
             <Ourproject />

@@ -1,5 +1,4 @@
 "use client";
-"use client";
 import React, { useState } from "react";
 import { Form, Container, Row, Col } from "react-bootstrap";
 import { Button } from "react-bootstrap";
@@ -9,22 +8,23 @@ import Link from "next/link";
 import VolunteerModal from "@/components/VolunteerModal";
 import { useContextValues } from "@/context/StateContext";
 import { createVolunteer } from "@/lib/apiCalls";
+import { storage } from "@/firebase";
+import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import { v4 } from "uuid";
 
 const FormComponent = () => {
     const { isSubmitted, setIsSubmitted } = useContextValues();
+    const MAX_IMAGE_SIZE = 300 * 1024; // 300KB in bytes
+    const [recaptchaToken, setRecaptchaToken] = useState();
+    const [imageUpload, setImageUpload] = useState(null);
+    const [validImage, setValidImage] = useState(false);
 
-    const [recaptchaToken, setRecaptchaToken] = useState(null);
     const test_SITE_KEY = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI";
     const SITE_KEY =
         process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || test_SITE_KEY;
 
-    const handleVerify = (token) => {
-        setRecaptchaToken(token);
-        console.log("captch verified", token);
-    };
-
     const [formData, setFormData] = useState({
-        volunteerImage: null,
+        volunteerImage: imageUpload,
         name: "",
         parentName: "",
         bloodGroup: "",
@@ -50,6 +50,25 @@ const FormComponent = () => {
         workPreference: "",
         findAboutUs: "",
     });
+    const handleVerify = (token) => {
+        setRecaptchaToken(token);
+        console.log("captcha verified", token);
+    };
+
+    const handleImageChange = (e) => {
+        const file = e.target.files[0]; // Get the selected file
+        if (file) {
+            setImageUpload(file);
+            setValidImage(file.size <= MAX_IMAGE_SIZE);
+            console.log("imageUpload size is:", file.size);
+            console.log("validimage is:", validImage);
+        } else {
+            // Handle the case where no file was selected
+            setImageUpload(null);
+            setValidImage(false);
+        }
+    };
+    
 
     const handleInputChange = (event) => {
         const { name, value } = event.target;
@@ -59,57 +78,69 @@ const FormComponent = () => {
         });
     };
 
-    const handleImageChange = (event) => {
-        setFormData({
-            ...formData,
-            volunteerImage: event.target.files[0],
-        });
-    };
-
     const handleSubmit = (event) => {
         event.preventDefault();
-        const { name, email } = formData;
+
         // You can access the form data in formData object here and send it to the backend.
         console.log("volunteer data: ", formData);
-        createVolunteer({
-            name,
-            email,
-            role: "volunteer",
-            volunteerObj: formData,
-        });
-
-        setIsSubmitted(true);
+        uploadImage(formData);
     };
 
-    // const formData2 = {
-    //     name: "somename",
-    //     email: "111@gmail.com",
-    //     phoneNumber: "111",
-    //     parentName: "1111",
-    // };
+    const uploadImage = (formData) => {
+        const { name, email } = formData;
+
+        if (imageUpload) {
+            if (imageUpload.size <= MAX_IMAGE_SIZE) {
+                console.log("Image size is:", imageUpload.size);
+                const imageRef = ref(
+                    storage,
+                    `/volunteerImages/${imageUpload.name + v4()}`
+                );
+
+                uploadBytes(imageRef, imageUpload).then((snapshot) => {
+                    getDownloadURL(snapshot.ref).then((url) => {
+                        formData.volunteerImage = url;
+                        console.log("Image URL is:", url);
+                        console.log("formData is:", formData);
+
+                        const isOk = createVolunteer({
+                            name,
+                            email,
+                            role: "volunteer",
+                            volunteerObj: formData,
+                        });
+
+                        if (isOk) {
+                            console.log("everything is ok");
+                            setIsSubmitted(true);
+                        }
+                    });
+
+                    alert("Image uploaded");
+                });
+            } else {
+                alert("Image size exceeds the maximum allowed (300KB).");
+            }
+        }
+    };
+
     return (
         <>
-            {/* <button
+            <button
                 onClick={() => {
-                    createVolunteer({
-                        name: "somename",
-                        email: "111@gmail.com",
-                        role: "1111",
-
-                        volunteerObj: formData2,
-                    });
+                    uploadImage();
                 }}
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
             >
                 test api : ignore me pls
-            </button> */}
+            </button>
             {isSubmitted ? (
                 <div className="border-2 border-gray-400 w-[90vw] md:w-[70vw]  md:p-7 p-2 ">
                     <p className="text-[#4A4C70] text-4xl text-center letter-wider font-semibold py-2 ">
                         Thanks for being a volunteer
                     </p>
                     <p className="text-lg font-semibold">
-                        join our social media for more updates
+                        Join our social media for more updates
                     </p>
                     <div>
                         <div className="mx-5">
@@ -409,7 +440,7 @@ const FormComponent = () => {
                             </Col>
                         </fieldset>
                         <Form.Group controlId="exampleForm.ControlTextarea1">
-                            <Form.Label>Why you&apos;d like to join</Form.Label>
+                            <Form.Label>Why you'd like to join</Form.Label>
                             <Form.Control
                                 as="textarea"
                                 rows={4}
@@ -420,7 +451,7 @@ const FormComponent = () => {
                         </Form.Group>
                         <Form.Group controlId="exampleForm.ControlTextarea1">
                             <Form.Label>
-                                What type of work you&apos;d like to do
+                                What type of work you'd like to do
                             </Form.Label>
                             <Form.Control
                                 as="textarea"
@@ -448,22 +479,6 @@ const FormComponent = () => {
                                     <option value="other">Other</option>
                                 </Form.Select>
                             </Col>
-                            {formData.findAboutUs === "other" && (
-                                <>
-                                    <Col md={6}>
-                                        <Form.Label>
-                                            From where did you hear about us
-                                        </Form.Label>
-                                        <Form.Control
-                                            type="text"
-                                            placeholder="Enter where you heard about us"
-                                            name="socialOther"
-                                            value={formData.socialOther}
-                                            onChange={handleInputChange}
-                                        />
-                                    </Col>
-                                </>
-                            )}
                             {formData.findAboutUs === "Social" && (
                                 <>
                                     <Col md={6}>
@@ -482,11 +497,25 @@ const FormComponent = () => {
                             )}
                         </Row>
                         <Form.Group>
-                            <Form.Label>Upload your Image</Form.Label>
+                            <Form.Label>
+                                Upload your Image
+                                {validImage ? (
+                                    <span className="text-sm text-green-500">
+                                        &nbsp; image is smaller than 300kb
+                                    </span>
+                                ) : (
+                                    <span className="text-sm text-red-500">
+                                        &nbsp; image should be smaller than
+                                        300kb
+                                    </span>
+                                )}
+                            </Form.Label>
                             <Form.Control
                                 type="file"
                                 accept="image/*"
-                                onChange={handleImageChange}
+                                onChange={(e) => {
+                                    handleImageChange(e);
+                                }}
                             />
                         </Form.Group>
                         <Form.Check className="mb-3">
@@ -494,17 +523,16 @@ const FormComponent = () => {
                                 Confirm
                             </Form.Check.Label>
                         </Form.Check>
-
                         <div className="text-center flex justify-center items-center flex-col gap-3">
                             <ReCaptcha
-                                sitekey={SITE_KEY}
+                                sitekey={test_SITE_KEY}
                                 onChange={handleVerify}
                             />
                             <Button
                                 variant="primary"
                                 type="submit"
                                 className="rounded-pill w-75"
-                                {...(!recaptchaToken && { disabled: true })}
+                                disabled={!recaptchaToken || !validImage}
                             >
                                 Register
                             </Button>
@@ -517,9 +545,3 @@ const FormComponent = () => {
 };
 
 export default FormComponent;
-
-// export default function RegForm() {
-//     return (
-//         <h1>volunteer form</h1>
-//     )
-// }
