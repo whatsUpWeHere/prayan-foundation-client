@@ -1,14 +1,14 @@
 import { initializeApp } from "firebase/app";
-import {getStorage} from "firebase/storage";
+import { getStorage } from "firebase/storage";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA3EEJuUlPUYx1DacVUz4Df5lB5I0uTjWc",
-  authDomain: "prayan-d07e9.firebaseapp.com",
-  projectId: "prayan-d07e9",
-  storageBucket: "prayan-d07e9.appspot.com",
-  messagingSenderId: "303552682777",
-  appId: "1:303552682777:web:516d50d113a028d4184388"
+  apiKey: "AIzaSyBBzUju_N6ZPqNyfSmutZtj_uIqJjC0hJ0",
+  authDomain: "prayan-foundation.firebaseapp.com",
+  projectId: "prayan-foundation",
+  storageBucket: "prayan-foundation.appspot.com",
+  messagingSenderId: "373929651192",
+  appId: "1:373929651192:web:89e75c5e7399cbb1ef440d"
 };
 
 // Initialize Firebase
