@@ -67,11 +67,12 @@ function AppNavbar() {
                             Prayan Foundation
                         </h2>
                     </Navbar.Brand>
-                </Link>
-                <Navbar.Toggle
+                    <Navbar.Toggle
                     aria-controls="navbar"
                     onClick={() => setShowOffcanvas(!showOffcanvas)}
                 />
+                </Link>
+                
                 <Navbar.Collapse id="navbar" className="d-none ">
                     <Nav className="m-auto">
                         <Nav.Link href="/">Home</Nav.Link>

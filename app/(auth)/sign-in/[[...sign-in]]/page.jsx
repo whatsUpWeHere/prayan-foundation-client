@@ -32,7 +32,7 @@ export default function Page() {
         <div  style={divStyle} >
             <h2>Please confirm that you are not bot...</h2>
             <ReCaptcha
-                sitekey={test_SITE_KEY}
+                sitekey={SITE_KEY}
                 onChange={handleVerify}
             />
 
