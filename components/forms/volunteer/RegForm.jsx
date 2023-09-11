@@ -1,4 +1,6 @@
 "use client";
+
+import { useUser } from "@clerk/nextjs";
 import React, { useState } from "react";
 import { Form, Container, Row, Col } from "react-bootstrap";
 import { Button } from "react-bootstrap";
@@ -13,6 +15,8 @@ import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { v4 } from "uuid";
 
 const FormComponent = () => {
+    const { isLoaded, isSignedIn, user } = useUser();
+
     const { isSubmitted, setIsSubmitted } = useContextValues();
     const MAX_IMAGE_SIZE = 300 * 1024; // 300KB in bytes
     const [recaptchaToken, setRecaptchaToken] = useState();
@@ -68,7 +72,6 @@ const FormComponent = () => {
             setValidImage(false);
         }
     };
-    
 
     const handleInputChange = (event) => {
         const { name, value } = event.target;
@@ -87,7 +90,7 @@ const FormComponent = () => {
     };
 
     const uploadImage = (formData) => {
-        const { name, email } = formData;
+        let { name, email } = formData;
 
         if (imageUpload) {
             if (imageUpload.size <= MAX_IMAGE_SIZE) {
@@ -103,6 +106,13 @@ const FormComponent = () => {
                         console.log("Image URL is:", url);
                         console.log("formData is:", formData);
 
+                        if (user) {
+                            const { emailAddresses } = user;
+                            const email1 = emailAddresses[0].emailAddress;
+                            if (email1) {
+                                email = email1;
+                            }
+                        }
                         const isOk = createVolunteer({
                             name,
                             email,
@@ -126,14 +136,7 @@ const FormComponent = () => {
 
     return (
         <>
-            <button
-                onClick={() => {
-                    uploadImage();
-                }}
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-            >
-                test api : ignore me pls
-            </button>
+            
             {isSubmitted ? (
                 <div className="border-2 border-gray-400 w-[90vw] md:w-[70vw]  md:p-7 p-2 ">
                     <p className="text-[#4A4C70] text-4xl text-center letter-wider font-semibold py-2 ">
