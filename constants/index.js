@@ -460,23 +460,6 @@ const developers_data = [
         portfolio:'https://sahil-profile.netlify.app/'
     },
    
-    {
-        name: 'Prakash Singh Rawat',
-        image: prakash_rawat,
-        role: 'Full Stack Web Developer',
-        github: 'https://github.com/PrakashSinghRawat-git',
-        linkedin: 'https://www.linkedin.com/in/prakash-singh-rawat-a48b11254',
-        portfolio:'https://prakash-rawat.vercel.app/'
-    },
-   
-    {
-        name: 'Prakash Singh Rawat',
-        image: prakash_rawat,
-        role: 'Full Stack Web Developer',
-        github: 'https://github.com/PrakashSinghRawat-git',
-        linkedin: 'https://www.linkedin.com/in/prakash-singh-rawat-a48b11254',
-        portfolio:'https://prakash-rawat.vercel.app/'
-    },
    
 ]
 const OurInidata=[
