@@ -1,10 +1,38 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import '@/app/globals.css'
+import "@/app/globals.css";
 import { logo } from "@/assets";
 
 const Footer = () => {
+    const [email, setEmail] = useState("");
+    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
+
+    const handleNewsletter = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await fetch(
+                backendUrl + "/api/newsletter/subscribe",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ email }),
+                }
+            );
+            if (response.ok) {
+                const data = await response.json();
+                console.log("newsletter response is ", data);
+                alert("Subscribed to newsletter");
+            }
+        } catch (error) {
+            console.error("Error adding to newsletter: ", error);
+            alert("Error adding to newsletter");
+        }
+    };
+
     return (
         <footer className="bg-[#20212B] text-white">
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
@@ -15,7 +43,7 @@ const Footer = () => {
                             <span className="hidden h-1 w-10 rounded bg-teal-500 lg:block" />
                             <div>
                                 <h2 className="text-2xl font-medium text-[#FDBE33]">
-                                    Join Us
+                                    Newsletter
                                 </h2>
                                 <p className="mt-4 max-w-lg text-gray-500 dark:text-gray-400">
                                     Lorem ipsum dolor sit amet consectetur
@@ -29,15 +57,23 @@ const Footer = () => {
                                 <label htmlFor="UserEmail" className="sr-only">
                                     Email
                                 </label>
-                                <div className="rounded-md border border-gray-100 p-2 dark:border-gray-800 sm:flex sm:items-center sm:gap-4 ">
+                                <div className="rounded-md border text-black font-semibold pl-2  border-gray-100 p-2 dark:border-gray-800 sm:flex sm:items-center sm:gap-4 ">
                                     <input
                                         type="email"
-                                        id="UserEmail"
-                                        placeholder="example@email.com"
+                                        id="email"
+                                        name="email"
+                                        value={email}
+                                        onChange={(e) =>
+                                            setEmail(e.target.value)
+                                        }
+                                        placeholder="Enter your email..."
                                         className="w-full border-none focus:border-transparent focus:ring-transparent dark:bg-gray-900 dark:text-white sm:text-sm py-3 my-3"
                                     />
-                                    <button className="mt-1 w-full rounded bg-teal-500 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-teal-600 sm:mt-0 sm:w-auto sm:shrink-0">
-                                        Sign Up
+                                    <button
+                                        className="mt-1 w-full rounded bg-teal-500 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-teal-600 sm:mt-0 sm:w-auto sm:shrink-0"
+                                        onClick={handleNewsletter}
+                                    >
+                                        Subscribe
                                     </button>
                                 </div>
                             </form>
@@ -62,11 +98,10 @@ const Footer = () => {
                                     Navigation Links
                                 </p>
                                 <ul className="mt-6 space-y-4 text-sm  list-none pl-0">
-                                    <li >
+                                    <li>
                                         <Link
                                             href="/about"
                                             className=" transition hover:opacity-75 text-gray-200 "
-                                            
                                         >
                                             About Us
                                         </Link>
