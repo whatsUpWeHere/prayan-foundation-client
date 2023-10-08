@@ -46,11 +46,7 @@ const Footer = () => {
                                     Newsletter
                                 </h2>
                                 <p className="mt-4 max-w-lg text-gray-500 dark:text-gray-400">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Veritatis, harum deserunt
-                                    nesciunt praesentium, repellendus eum
-                                    perspiciatis ratione pariatur a aperiam eius
-                                    numquam doloribus asperiores sunt.
+                                   Subscribe for our newsletter to get the latest updates
                                 </p>
                             </div>
                             <form className="mt-6 w-full">
