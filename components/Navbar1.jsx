@@ -57,7 +57,7 @@ function AppNavbar() {
                     <Navbar.Brand>
                         {/* "https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/logo.png?raw=true" */}
                         <img
-                            src="https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/logo.png?raw=true"
+                            src="/images/logo.png"
                             alt="Prayan Foundation"
                             width="48rem"
                             height="48rem"
