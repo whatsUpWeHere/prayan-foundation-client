@@ -368,14 +368,6 @@ const Ourcabinet=[
         email:""
     },
     {
-        name:"Abdul Ghani",
-        role:"SRCC Unit Head",
-        imageSrc:"https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/abdul.jpg?raw=true",
-        insta:"",
-        linkedin:"",
-        email:""
-    },
-    {
         name:"Snehal Gupta",
         role:"MH Unit Head",
         imageSrc:"https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/sneha.jpg?raw=true",
@@ -386,7 +378,7 @@ const Ourcabinet=[
     {
         name:"Mouli",
         role:"RAMJAS Unit Head",
-        imageSrc:"https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/IMG_20231118_130004.jpg?raw=true",
+        imageSrc:"https://raw.githubusercontent.com/whatsUpWeHere/prayanFoundationwebsiteImages/main/Mouli-removebg-preview.png",
         insta:"",
         linkedin:"",
         email:""
