@@ -211,7 +211,7 @@ const Cardsdata = [
     },
     {
         name: 'Samya Jain',
-        role: 'Treasurer',
+        role: 'Strategic Director',
         imageSrc: 'https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/team4.png?raw=true',
         linkedin: '',
         insta: '',
