@@ -392,9 +392,9 @@ const Ourcabinet=[
         email:""
     },
     {
-        name:"Keshav Goel",
+        name:"Mouli",
         role:"RAMJAS Unit Head",
-        imageSrc:"https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/keshav.jpg?raw=true",
+        imageSrc:"https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/IMG_20231118_130004.jpg?raw=true",
         insta:"",
         linkedin:"",
         email:""
