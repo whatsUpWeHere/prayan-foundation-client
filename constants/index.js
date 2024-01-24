@@ -202,11 +202,11 @@ const Cardsdata = [
         gmail: ''
     },
     {
-        name: 'Navya Shrivastava',
+        name: 'Prince Kumar Yadav',
         role: 'General Secretary',
-        imageSrc: 'https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/team3.png?raw=true',
-        linkedin: 'https://www.linkedin.com/in/navya-shrivastava-534446225',
-        insta: 'https://instagram.com/navyaaaa.18?igshid=MzNlNGNkZWQ4Mg==',
+        imageSrc: 'https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/team7.png?raw=true',
+        linkedin: '',
+        insta: '',
         gmail: ''
     },
     {
