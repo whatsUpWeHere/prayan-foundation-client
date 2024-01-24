@@ -234,14 +234,6 @@ const Cardsdata = [
         gmail: ''
     },
     {
-        name: 'Prince Kumar Yadav',
-        role: 'Logistics and Communications Head',
-        imageSrc: 'https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/team7.png?raw=true',
-        linkedin: '',
-        insta: '',
-        gmail: ''
-    },
-    {
         name: 'Jhalak Grover',
         role: 'Content Head',
         imageSrc: 'https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/team8.png?raw=true',
