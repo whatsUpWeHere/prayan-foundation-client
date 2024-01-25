@@ -336,14 +336,6 @@ const InitiativeData = [
 ];
 const Ourcabinet=[
     {
-        name:"Swarnim Anand",
-        role:"ZHDC Unit Head",
-        imageSrc:"https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/swarnim.jpg?raw=true",
-        insta:"",
-        linkedin:"",
-        email:""
-    },
-    {
         name:"Hunnar Kaushal",
         role:"JMC Unit Head",
         imageSrc:"https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/hunnar.jpg?raw=true",
@@ -378,7 +370,7 @@ const Ourcabinet=[
     {
         name:"Mouli",
         role:"RAMJAS Unit Head",
-        imageSrc:"https://raw.githubusercontent.com/whatsUpWeHere/prayanFoundationwebsiteImages/main/Mouli-removebg-preview.png",
+        imageSrc:"https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/Mouli-removebg-preview.png?raw=true",
         insta:"",
         linkedin:"",
         email:""
