@@ -234,9 +234,9 @@ const Cardsdata = [
         gmail: ''
     },
     {
-        name: 'Jhalak Grover',
-        role: 'Content Head',
-        imageSrc: 'https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/team8.png?raw=true',
+        name: 'Vridha Sharma',
+        role: 'Content and Graphics Head',
+        imageSrc: 'https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/vridha.png?raw=true',
         linkedin: '',
         insta: '',
         gmail: ''
@@ -274,9 +274,9 @@ const Cardsdata = [
         gmail: ''
     },
     {
-        name: 'Aryan Sapra',
+        name: 'Disha Goel',
         role: 'Project Director Prakrit',
-        imageSrc: 'https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/team12.png?raw=true',
+        imageSrc: 'https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/disshaedit%20(1).png?raw=true',
         linkedin: '',
         insta: '',
         gmail: ''
