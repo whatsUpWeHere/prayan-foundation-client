@@ -435,7 +435,15 @@ const developers_data = [
         linkedin: 'https://www.linkedin.com/in/sahil-gaikwad-6b8068175/',
         portfolio:'https://sahil-profile.netlify.app/'
     },
-   
+
+    {
+        name: 'Khushi Sihag',
+        image: "https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/KhushiDeveloper.png?raw=true",
+        role: 'Full Stack Web Developer',
+        github: 'https://github.com/KiaraSihag',
+        linkedin: 'https://www.linkedin.com/in/khushi-sihag-a67202218/',
+        portfolio:'https://kiarasihag.github.io/My-Portfolio-Website/'
+    },
    
 ]
 const OurInidata=[
