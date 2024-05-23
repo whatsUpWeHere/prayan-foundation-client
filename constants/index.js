@@ -438,7 +438,7 @@ const developers_data = [
 
     {
         name: 'Khushi Sihag',
-        image: "https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/KhushiDeveloper.png?raw=true",
+        image: "https://github.com/whatsUpWeHere/prayanFoundationwebsiteImages/blob/main/khushi.png?raw=true",
         role: 'Full Stack Web Developer',
         github: 'https://github.com/KiaraSihag',
         linkedin: 'https://www.linkedin.com/in/khushi-sihag-a67202218/',
